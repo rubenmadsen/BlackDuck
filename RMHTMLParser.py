@@ -9,7 +9,7 @@ class Tag:
 
 class RMHTMLParser:
     tagnames = []
-    cursor = 0
+    curddsor = 0
     raw_data = ""
     tags = []
 
@@ -21,17 +21,18 @@ class RMHTMLParser:
     def refactorFile(self):
         #self.raw_data = self.raw_data.replace("\n","")
         print(self.raw_data)
+    def getNext(self):
 
     def parse(self,start,data):
         for pos in range(start, len(data)):
             if data[pos] == '<':
                 pos += 1
-                tag = self.extraxtTag(data,pos)
+                tag = self.extractTag(data,pos)
                 self.cursor += tag.length
-                self.tags.append(tag)
-            self.cursor += 1
 
-    def extraxtTag(self,data,index):
+            break
+
+    def extractTag(self,data,index):
         tag = Tag()
         tag.startIndex = index
         length = 0
