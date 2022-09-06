@@ -1,8 +1,9 @@
-
-from RMParser import RMParser
 from urllib.parse import urlparse
-parser = RMParser("https://www.youtube.com")
-hostname = urlparse("http://www.techcrunch.com/").hostname
+from RMHTMLParser import RMHTMLParser
 
-print(hostname)
+address = "http://www.pornhub.com"
+parser = RMHTMLParser(address)
+#hostname = urlparse(address).hostname
+
 print(parser.raw_data)
+print(parser.tags)
