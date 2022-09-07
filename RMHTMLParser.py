@@ -1,7 +1,9 @@
 import urllib.request
+from urllib.parse import urlparse
+
 import RMSeeker
 from RMWebpage import RMWebpage
-
+from RMColors import RMColors
 
 class Tag:
     type = ""
@@ -18,7 +20,7 @@ class RMHTMLParser:
     tags = []
 
     def __init__(self, url):
-        print(url)
+        print(urlparse(url).hostname + " @ " + url)
         self.url = url
         self.tagnames = self.getTagNamesFromFile()
         self.raw_data = getWebsiteAsString(url)
@@ -27,7 +29,6 @@ class RMHTMLParser:
 
     def refactorRawData(self):
         self.raw_data = self.raw_data.replace('\n', '').replace('\r', '').replace('\t', '')
-        # print(self.raw_data)
 
     def getNext(self):
         if self.hasNext():
@@ -46,7 +47,6 @@ class RMHTMLParser:
             return False
 
     def parse(self):
-        # print(self.raw_data)
         while (self.hasNext()):
             char = self.getNext()
             while (char != '<'):
@@ -79,17 +79,12 @@ class RMHTMLParser:
         for tagname in self.tagnames:
             if (tag.type == tagname):
                 tag.data = data[end + 1:]
-
-                # if( tag.type.startswith("</")):
-                # tag.isEndTag = True
-                # print(tagname)
                 break
 
         tag.type = "<" + tagname + ">"
         self.extractAttributes(tag)
         self.tags.append(tag)
-        # print((tag.type))
-        # print((tag.data))
+
 
     def extractAttributes(self, tag):
         tag.attr = tag.data.split(" ")
@@ -117,7 +112,6 @@ class RMHTMLParser:
             for line in fi:
                 names.append(line.replace("\n", ""))
 
-        # print(names)
         return names
 
     def writeTagsToFile(self):
@@ -133,13 +127,15 @@ class RMHTMLParser:
 
 
 def getWebsiteAsString(url) -> str:
-    req = urllib.request.urlopen(url)
-    mybytes = req.read()
-    stringData = mybytes.decode("utf8")
-    add = "<meta http-equiv='Content-type' content='text/html; charset=UTF-8' />"
-    # stringData = add + stringData
-
-    with open("preparsed.txt", "w", encoding="utf-8") as fo:
-        fo.write(stringData)
+    stringData = ""
+    try:
+        req = urllib.request.urlopen(url)
+        mybytes = req.read()
+        stringData = mybytes.decode("utf8")
+    except:
+        print(RMColors.WARNING + "Grande problemas" + RMColors.ENDC)
+    finally:
+        with open("preparsed.txt", "w", encoding="utf-8") as fo:
+            fo.write(stringData)
 
     return stringData

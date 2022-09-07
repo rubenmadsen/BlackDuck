@@ -9,6 +9,8 @@ class RMWebpage:
     subsites = []
     externals = []
     emails = []
+    metawords = []
+    metatext = []
     def __init__(self,url):
         self.url = url
         self.root = urlparse(url).hostname
@@ -28,3 +30,6 @@ class RMWebpage:
             self.emails.append(link)
         else:
             self.subsites.append(link)
+
+def getHostnameForPage(url):
+    return urlparse(url).hostname

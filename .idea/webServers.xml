@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="58a18245-6491-44cd-9be0-ef2abbac22f3" name="Madness1">
+        <fileTransfer rootFolder="/home/ruben" accessType="SFTP" host="ip.rubenmadsen.com" port="22" sshConfigId="be87e807-d828-41cb-8e32-8dd69fc5a3cc" sshConfig="ruben@ip.rubenmadsen.com:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

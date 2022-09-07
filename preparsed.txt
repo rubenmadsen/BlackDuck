@@ -1,796 +1,119 @@
 <!DOCTYPE html>
-<html lang="sv-SE">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-<script type="text/javascript">
-var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}});
-</script>
+<html lang="sv">
+<head>
+        <script type="text/javascript" src="https://www.datadoghq-browser-agent.com/datadog-logs.js"></script>
+        <script>
+            if (window.DD_LOGS) {
+                DD_LOGS.init({
+                    clientToken: 'pub9ea53446d675e0c6cdd2e07bc0ce6780',
+                    forwardErrorsToLogs: true,
+                    level: 'warn'
+                });
+                DD_LOGS.addLoggerGlobalContext('env', 'production');
+                DD_LOGS.addLoggerGlobalContext('name', 'sports-web-browser');
+                DD_LOGS.addLoggerGlobalContext('website', 'malservice');
+            }
+        </script>
+    <title>Sportbladet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="Mx_XvoVEUilHQ2SGhLBIQU8QL5s7aSSZV6U5kczAMgU">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="sv_SE">
+        <script src="https://acdn.adnxs.com/ast/static/0.47.0/ast.js" defer></script>
+        <script src="https://cogwheel.inventory.schibsted.io/prod/latest/gdpr-bundle.js" defer></script>
+        <link rel="stylesheet" href="/dist/ab.main.db205b65e8.css"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="/static/site-assets/ab/apple-icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/static/site-assets/ab/apple-icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/site-assets/ab/apple-icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/site-assets/ab/apple-icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/site-assets/ab/apple-icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/site-assets/ab/apple-icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/site-assets/ab/apple-icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/site-assets/ab/apple-icons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/site-assets/ab/apple-icons/apple-touch-icon-180x180.png">
+    <link rel="manifest" href="/static/site-assets/ab/manifest.json">
+    <link rel="mask-icon" href="/static/site-assets/ab/apple-icons/safari-pinned-tab.svg" color="#FCEC4E">
+    <link rel="shortcut icon" href="/static/site-assets/ab/favicon.ico">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="dns-prefetch" href="https://assets.vglive.no/">
+    <link rel="dns-prefetch" href="https://cdn.sportsnext.schibsted.io/">
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:2947800,hjsv:6 };
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+</head>
+<body>
+    <div id="app"></div>
+    <div id="ad-detection-element" class="adBanner" style="width: 1px; height: 1px; position: absolute; z-index: -9999"></div>
+    <script type="text/javascript">
+        window.__APP_CONFIG__ = {"app":{"language":"sv","countryCode":"se","defaultSport":"football","sports":["football","ice-hockey","handball","formula1","floorball"],"scheduleNavigation":[{"sport":"football"},{"sport":"ice-hockey"},{"sport":"formula1"},{"sport":"handball"},{"sport":"floorball"},{"sport":"bandy"},{"sport":"basket"},{"sport":"tennis"}],"tournamentsNavigationSports":["football","ice-hockey","handball","floorball"],"sportradarWidgetSports":["bandy","basket","tennis"],"apiUrl":"/api","apiServerUrl":"http://sports-web-bff.sports-pro.svc.cluster.local/api","mediaQueries":{"tablet":"(min-width: 768px)","desktop":"(min-width: 1010px)","minWidthToShowSkyscrapers":"(min-width: 1190px)","minWidthToShowWidescreenAds":"(min-width: 1268px)"},"spinjsLoaders":{"userActionLoader":{"lines":9,"length":2,"width":4,"radius":6,"scale":1,"corners":1,"color":"#B8BABF","speed":1.2,"animation":"spinner-line-fade-default","shadow":false},"pageLoader":{"lines":17,"length":0,"width":4,"radius":13,"scale":1,"corners":1,"color":"#000000","speed":1.2,"animation":"spinner-line-fade-default","shadow":false},"pageLoaderDarkMode":{"lines":17,"length":0,"width":4,"radius":13,"scale":1,"corners":1,"color":"#B8BABF","speed":1.2,"animation":"spinner-line-fade-default","shadow":false}},"loadingBar":{"updateTime":50,"progressIncrease":30,"maxProgress":80},"openGraph":{"og:type":"website","og:locale":"sv_SE"},"contact":{"email":"webbsport@aftonbladet.se"},"bettingTips":{"enabled":false},"fantasySection":{"enabled":false},"sportradarWidgetPage":{"enabled":true,"iframeUrl":"https://ls.sir.sportradar.com/aftonbladet/se"},"feed":{"defaultFeedTeamIds":["11491","15223","70017","105652"]},"serviceDisruptionAlert":{"message":"För tillfälligt upplever vi problem med tjänsten. Vi ber om ursäkt och arbetar för att åtgärda felet så snart som möjligt."},"htmlLanguage":"sv","defaultFavoriteTeams":{"football":[11491,15223],"ice-hockey":[105470],"handball":[98514,98428],"floorball":[104157]},"defaultFavoriteTournaments":{"football":[45],"ice-hockey":[97],"floorball":[157]},"defaultPageTitle":"Sportbladet","head":["<link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"/static/site-assets/ab/apple-icons/apple-touch-icon-57x57.png\">","<link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"/static/site-assets/ab/apple-icons/apple-touch-icon-60x60.png\">","<link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"/static/site-assets/ab/apple-icons/apple-touch-icon-72x72.png\">","<link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"/static/site-assets/ab/apple-icons/apple-touch-icon-76x76.png\">","<link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"/static/site-assets/ab/apple-icons/apple-touch-icon-114x114.png\">","<link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"/static/site-assets/ab/apple-icons/apple-touch-icon-120x120.png\">","<link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"/static/site-assets/ab/apple-icons/apple-touch-icon-144x144.png\">","<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"/static/site-assets/ab/apple-icons/apple-touch-icon-152x152.png\">","<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/static/site-assets/ab/apple-icons/apple-touch-icon-180x180.png\">","<link rel=\"manifest\" href=\"/static/site-assets/ab/manifest.json\">","<link rel=\"mask-icon\" href=\"/static/site-assets/ab/apple-icons/safari-pinned-tab.svg\" color=\"#FCEC4E\">","<link rel=\"shortcut icon\" href=\"/static/site-assets/ab/favicon.ico\">","<meta name=\"theme-color\" content=\"#ffffff\">","<link rel=\"dns-prefetch\" href=\"https://assets.vglive.no/\">","<link rel=\"dns-prefetch\" href=\"https://cdn.sportsnext.schibsted.io/\">"]},"publisher":{"name":"ab"},"schibstedAccount":{"enabled":true,"sdkOptions":{"env":"PRO","redirectUri":"https://malservice.aftonbladet.se","clientId":"51c0425b9eaf7c0872000000","sessionDomain":"https://id.aftonbladet.se"},"aboutMeLoggedInUrl":"https://aboutme.schibsted.com/p/schibsted.com/ads","aboutMeNotLoggedInUrl":"https://aboutme.schibsted.com/p/se/ads/"},"psi3":{"enabled":true,"propertyId":4595,"baseEndpoint":"https://cmp.aftonbladet.se","propertyHref":null,"consentLanguage":"se"},"datadogLogs":{"enabled":true,"browserAgentUrl":"https://www.datadoghq-browser-agent.com/datadog-logs.js","clientToken":"pub9ea53446d675e0c6cdd2e07bc0ce6780","options":{"site":"datadoghq.com","forwardErrorsToLogs":true,"level":"warn"},"globalTags":{"env":"production","name":"sports-web-browser","website":"malservice"}},"eventhub":{"url":"wss://eventhub.pro.sports.aws.pubops.net","version":"v1","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJtcHQtc3BvcnRzQHNjaGlic3RlZC5jb20iLCJyZWFkIjpbInYxLyMiLCJpbnRlcm5hbC93ZWIvYWIvdjEvIyIsInB1YmxpYy9zaGFyZWQvYWIvdjEvIyJdLCJ3cml0ZSI6W119.ln0vTguLGSMJyNMuzQhVWopQClwjTTeec5W0UGaxTYI","options":{"pingInterval":60000,"pingTimeout":5000}},"tracking":{"enabled":true,"pulse":{"enabled":true,"clientId":"aftonbladet","productTag":"malservice","realm":"schibsted.com","stage":"pro","category":"sportbladet"},"linkpulse":{"enabled":false},"sifo":{"enabled":true,"url":"https://analytics.codigo.se/j/effe5e787a794547bab94d0445022f00.js"},"abSitecatalyst":{"enabled":true},"hotjar":{"enabled":true,"hjid":2947800,"hjsv":6}},"ads":{"enabled":true,"appNexusSDKUrl":"https://acdn.adnxs.com/ast/static/0.47.0/ast.js","adsTransparencyScriptUrl":"https://cogwheel.inventory.schibsted.io/prod/latest/gdpr-bundle.js","sdkOptions":{"disablePsa":true,"noBidIfUnsold":true,"enableSafeFrame":true,"member":9943},"adsTxtContent":"appnexus.com, 9943, DIRECT, f5ab79cb980f11d1\ngoogle.com, pub-4371618550445444, DIRECT, f08c47fec0942fa0\nsmartclip.net, 849, RESELLER","debug":false,"globalPageKeywords":{"aa-sch-inventory_type":"other","aa-sch-page_type":"other","no-sno-publishergroup":"schibsted","aa-sch-publisher":"aftonbladet","aa-sch-country_code":"se","se-generic-section":"sportbladet"},"countryCode":"se","invCodePrefix":"se-aftonbladet","placements":{"widescreen-schedule":{"code":"other-malservice_widescreen","sizes":{"desktop":[[250,600],[2,1]]},"routes":{"desktop":["schedule","formula1Schedule"]},"keywords":{"desktop":{"se-generic-adformat":"widescreen_1","se-generic-section":["malservice","malservice-list"]}}},"widescreen-event":{"code":"other-malservice_widescreen","sizes":{"desktop":[[250,600],[2,1]]},"routes":{"desktop":["event","formula1Event"]},"keywords":{"desktop":{"se-generic-adformat":"widescreen_1","se-generic-section":["malservice","malservice-match"]}}},"widescreen-other-routes":{"code":"other-malservice_widescreen","sizes":{"desktop":[[250,600],[2,1]]},"routes":{"desktop":["tournaments","season","team","teamVsTeam","person","userProfile","myStream","onboarding","fantasy"]},"keywords":{"desktop":{"se-generic-adformat":"widescreen_1","se-generic-section":["malservice"]}}},"schedule-row-1":{"code":"other-malservice_listning","sizes":{"mobile":[[320,320],[5,285]],"tablet":[[980,240],[5,285]],"desktop":[[980,240],[5,285]]},"routes":{"mobile":["schedule","formula1Schedule"],"desktop":["schedule","formula1Schedule"]},"keywords":{"mobile":{"se-generic-adformat":["malservice_listning","panorama_1"],"se-generic-section":["malservice","malservice-list"]},"tablet":{"se-generic-adformat":["malservice_listning_wde","panorama_1_wde"],"se-generic-section":["malservice","malservice-list"]},"desktop":{"se-generic-adformat":["malservice_listning_wde","panorama_1_wde"],"se-generic-section":["malservice","malservice-list"]}},"refreshOnScheduleDateChange":true},"side-schedule-row-1":{"code":"other-malservice_insider_1","sizes":{"tablet":[[300,250],[300,480],[300,600],[2,1]],"desktop":[[300,250],[300,480],[300,600],[2,1]]},"routes":{"desktop":["schedule","formula1Schedule"]},"keywords":{"tablet":{"se-generic-adformat":["insider_1"],"se-generic-section":["malservice","malservice-list"]},"desktop":{"se-generic-adformat":["insider_1"],"se-generic-section":["malservice","malservice-list"]}},"refreshOnScheduleDateChange":true},"event-report-item-row-2":{"code":"other-malservice_match","sizes":{"mobile":[[320,320],[5,285]],"tablet":[[640,320],[5,285]],"desktop":[[640,320],[5,285]]},"routes":{"mobile":["event","formula1Event"],"desktop":["event","formula1Event"]},"keywords":{"mobile":{"se-generic-adformat":["malservice_match","panorama_1"],"se-generic-section":["malservice","malservice-match"]},"tablet":{"se-generic-adformat":["malservice_match_wde","modul_1"],"se-generic-section":["malservice","malservice-match"]},"desktop":{"se-generic-adformat":["malservice_match_wde","modul_1"],"se-generic-section":["malservice","malservice-match"]}},"refreshOnSubviewChange":true},"event-statistics":{"code":"other-malservice_match","sizes":{"mobile":[[320,320],[5,285]],"tablet":[[640,320],[5,285]],"desktop":[[640,320],[5,285]]},"routes":{"mobile":["event"],"desktop":["event"]},"keywords":{"mobile":{"se-generic-adformat":["malservice_match","panorama_1"],"se-generic-section":["malservice","malservice-match"]},"tablet":{"se-generic-adformat":["malservice_match_wde","modul_1"],"se-generic-section":["malservice","malservice-match"]},"desktop":{"se-generic-adformat":["malservice_match_wde","modul_1"],"se-generic-section":["malservice","malservice-match"]}},"refreshOnSubviewChange":true},"event_liveodds":{"code":"other-malservice_native","sizes":{"mobile":[5,60],"tablet":[5,60],"desktop":[5,60]},"routes":{"mobile":["event"],"desktop":["event"]},"keywords":{"mobile":{"se-generic-adformat":["malservice_native"],"se-generic-section":["malservice","malservice-match"]},"tablet":{"se-generic-adformat":["malservice_native_wde"],"se-generic-section":["malservice","malservice-match"]},"desktop":{"se-generic-adformat":["malservice_native_wde"],"se-generic-section":["malservice","malservice-match"]}}},"liveblog-row-1":{"code":"other-malservice_match","sizes":{"mobile":[[320,320],[5,285]],"tablet":[[640,320],[5,285]],"desktop":[[640,320],[5,285]]},"routes":{"mobile":["event"],"desktop":["event"]},"keywords":{"mobile":{"se-generic-adformat":["malservice_match","panorama_1"],"se-generic-section":["malservice","malservice-match"]},"tablet":{"se-generic-adformat":["malservice_match_wde","modul_1"],"se-generic-section":["malservice","malservice-match"]},"desktop":{"se-generic-adformat":["malservice_match_wde","modul_1"],"se-generic-section":["malservice","malservice-match"]}},"refreshOnSubviewChange":true},"liveblog-row-6":{"code":"chatt_integration","sizes":{"mobile":[[320,320],[5,146]],"tablet":[[640,320],[5,146]],"desktop":[[640,320],[5,146]]},"routes":{"mobile":["event"],"desktop":["event"]},"refreshOnSubviewChange":true,"keywords":{"mobile":{"se-generic-adformat":["integration_chatt","panorama_2"],"se-generic-section":["malservice","malservice-match"]},"tablet":{"se-generic-adformat":["integration_chatt_wde","modul_2"],"se-generic-section":["malservice","malservice-match"]},"desktop":{"se-generic-adformat":["integration_chatt_wde","modul_2"],"se-generic-section":["malservice","malservice-match"]}}}}},"tournamentSpecificAds":{"enabled":false},"norskTipping":{"live":{"enabled":false},"beforeStart":{"enabled":false},"formula1Live":{"enabled":false},"formula1BeforeStart":{"enabled":false}},"sportradarFormula1Widget":{"url":"https://widgets.sir.sportradar.com/3882679c0297157929e2f81032d9d697/widgetloader"},"playersAbroadWidget":{"enabled":true,"positionIndex":1},"SVPVideo":{"autoplayLive":false,"sdkUrl":"https://cdn.svp.schibsted.io/player/3.27.2/player.min.js","sdkNextUrl":"https://cdn.svp.schibsted.io/player/3.27.2/player.next.min.js","sdkOptions":{"primary":"html5","recommended":false,"sharing":false,"vendor":"ab","locale":"se","member":9943,"options":{"autoplayMuted":true,"vpaidcontrols":true},"pulse":{"provider":"aftonbladet"}},"sdkPlugins":{"paywall":{"url":"https://www.aftonbladet.se/video-player-extras/latest/paywall.js","clientId":"4f1692bb9daf7cd367000001"}},"tokenApiUrl":"https://svp-token-api.aftonbladet.se"},"featureToggles":{"apiUrl":"https://feature-api.pro.sports.aws.pubops.net","localStorageCacheTTL":300000,"appName":"web-ab","allowedFeatures":["service-disruption-alert"]},"allowedThemes":[{"name":"pink","type":"light"},{"name":"burgundy","type":"dark"}],"osWebDarkThemeEnabled":false,"serviceWorker":{"enabled":true},"promotedStreamEvent":{"enabled":true,"sport":"football","tournaments":{"ita":4,"esp":2},"schedule":{}},"promotedEventIds":[573983,573989,573972,574003,574012,573979],"eventStreamingAds":[]};
+        window.__ADS_GLOBAL_PAGE_KEYWORDS__ = {"aa-sch-inventory_type":"other","aa-sch-page_type":"other","no-sno-publishergroup":"schibsted","aa-sch-publisher":"aftonbladet","aa-sch-country_code":"se","se-generic-section":"sportbladet"};
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Annonslösningar för små och stora företag – Schibsted for business</title>
-        <link href="https://schibstedforbusiness.se/wp-content/themes/schibsted-theme/favicon.png" rel="shortcut icon">
-        <link href="https://schibstedforbusiness.se/wp-content/themes/schibsted-theme/lightbox/css/lightbox.min.css" rel="stylesheet" />
-        <title>Annonslösningar för små och stora företag – Schibsted for business</title>
-<link rel="alternate" href="https://schibstedforbusiness.se/en/home/" hreflang="en" />
-<link rel="alternate" href="https://schibstedforbusiness.se/" hreflang="sv" />
+        function hasES2020Syntax() {
+            try {
+                // object spread, optional chaining syntax
+                eval('({...{foo: 0}});var rand8844={};rand8844?.b');
+            } catch (err) {
+                return false;
+            }
+            return true;
+        }
 
-<!-- The SEO Framework av Sybre Waaijer -->
-<meta name="robots" content="max-snippet:-1,max-image-preview:standard,max-video-preview:-1" />
-<meta name="description" content="Så annonserar du på Sveriges största medieplattformar och marknadsplatser. Nå 8 av 10 svenskar varje vecka via Aftonbladet, SvD, Blocket, tv.nu, Godare, Vinguiden, Omni &#038; Klart." />
-<meta property="og:locale" content="sv_SE" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Annonslösningar för små och stora företag – Schibsted for business" />
-<meta property="og:description" content="Så annonserar du på Sveriges största medieplattformar och marknadsplatser. Nå 8 av 10 svenskar varje vecka via Aftonbladet, SvD, Blocket, tv.nu, Godare, Vinguiden, Omni &#038; Klart." />
-<meta property="og:url" content="https://schibstedforbusiness.se/" />
-<meta property="og:site_name" content="Schibsted for business" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Annonslösningar för små och stora företag – Schibsted for business" />
-<meta name="twitter:description" content="Så annonserar du på Sveriges största medieplattformar och marknadsplatser. Nå 8 av 10 svenskar varje vecka via Aftonbladet, SvD, Blocket, tv.nu, Godare, Vinguiden, Omni &#038; Klart." />
-<link rel="canonical" href="https://schibstedforbusiness.se/" />
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","url":"https://schibstedforbusiness.se/","name":"Schibsted for business","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://schibstedforbusiness.se/search/{search_term_string}/"},"query-input":"required name=search_term_string"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","url":"https://schibstedforbusiness.se/","name":"Schibsted for business"}</script>
-<!-- / The SEO Framework av Sybre Waaijer | 2.83ms meta | 0.99ms boot -->
+        var polyfills = [];
+        window.fetch || polyfills.push('fetch');
+        window.globalThis || polyfills.push('globalThis');
+        window.IntersectionObserver || polyfills.push('IntersectionObserver');
+        window.ResizeObserver || polyfills.push('ResizeObserver');
 
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<script type="text/javascript">
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/schibstedforbusiness.se\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.2"}};
-/*! This file is auto-generated */
-!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
-</script>
-<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 0.07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-	<link rel='stylesheet' id='wp-block-library-css'  href='https://schibstedforbusiness.se/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2' type='text/css' media='all' />
-<style id='global-styles-inline-css' type='text/css'>
-body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-</style>
-<link rel='stylesheet' id='cookie-law-info-css'  href='https://schibstedforbusiness.se/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css?ver=2.1.2' type='text/css' media='all' />
-<link rel='stylesheet' id='cookie-law-info-gdpr-css'  href='https://schibstedforbusiness.se/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css?ver=2.1.2' type='text/css' media='all' />
-<link rel='stylesheet' id='google-fonts-css'  href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro%3Awght%40300%3B400%3B600&#038;display=swap&#038;ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='horizon/css-css'  href='https://schibstedforbusiness.se/wp-content/themes/schibsted-theme/dist/css/style.css?id=0319b128a9eaca3c0ea1' type='text/css' media='all' />
-<script type='text/javascript' src='https://code.jquery.com/jquery-3.4.1.min.js?ver=3.4.1' id='jquery-core-js'></script>
-<script type='text/javascript' src='https://code.jquery.com/jquery-migrate-3.0.1.min.js?ver=3.0.1' id='jquery-migrate-js'></script>
-<script type='text/javascript' id='cookie-law-info-js-extra'>
-/* <![CDATA[ */
-var Cli_Data = {"nn_cookie_ids":[],"cookielist":[],"non_necessary_cookies":[],"ccpaEnabled":"","ccpaRegionBased":"","ccpaBarEnabled":"","strictlyEnabled":["necessary","obligatoire"],"ccpaType":"gdpr","js_blocking":"1","custom_integration":"","triggerDomRefresh":"","secure_cookies":""};
-var cli_cookiebar_settings = {"animate_speed_hide":"500","animate_speed_show":"500","background":"#FFF","border":"#b1a6a6c2","border_on":"","button_1_button_colour":"#30588e","button_1_button_hover":"#264672","button_1_link_colour":"#fff","button_1_as_button":"1","button_1_new_win":"","button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#000a12","button_2_as_button":"","button_2_hidebar":"","button_3_button_colour":"#dedfe0","button_3_button_hover":"#b2b2b3","button_3_link_colour":"#333333","button_3_as_button":"1","button_3_new_win":"","button_4_button_colour":"#dedfe0","button_4_button_hover":"#b2b2b3","button_4_link_colour":"#333333","button_4_as_button":"1","button_7_button_colour":"#61a229","button_7_button_hover":"#4e8221","button_7_link_colour":"#fff","button_7_as_button":"1","button_7_new_win":"","font_family":"inherit","header_fix":"","notify_animate_hide":"1","notify_animate_show":"","notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":"","scroll_close_reload":"","accept_close_reload":"","reject_close_reload":"","showagain_tab":"","showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#333333","show_once_yn":"","show_once":"10000","logging_on":"","as_popup":"","popup_overlay":"1","bar_heading_text":"","cookie_bar_as":"widget","popup_showagain_position":"bottom-right","widget_position":"left"};
-var log_object = {"ajax_url":"https:\/\/schibstedforbusiness.se\/wp-admin\/admin-ajax.php"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://schibstedforbusiness.se/wp-content/plugins/cookie-law-info/public/js/cookie-law-info-public.js?ver=2.1.2' id='cookie-law-info-js'></script>
-<link rel="https://api.w.org/" href="https://schibstedforbusiness.se/wp-json/" /><link rel="alternate" type="application/json" href="https://schibstedforbusiness.se/wp-json/wp/v2/pages/21" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schibstedforbusiness.se/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schibstedforbusiness.se/wp-includes/wlwmanifest.xml" /> 
-<link rel="alternate" type="application/json+oembed" href="https://schibstedforbusiness.se/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschibstedforbusiness.se%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://schibstedforbusiness.se/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschibstedforbusiness.se%2F&#038;format=xml" />
-<meta name="generator" content="Site Kit by Google 1.81.0" />    </head>
-    <body data-rsssl=1 class="home page-template-default page page-id-21 common has-sidebar">
-        <!--[if IE]>
-            <div class="alert-ie-appeared">
-                Du använder <strong>Internet Explorer</strong> som webbläsare. Internet Explorer har från och med januari 2016 slutat få säkerhetsuppdateringar utav Microsoft Corporation. Så för att uppnå den bästa upplevelsen av denna webbplats, var god uppdatera till en annan <a href="https://browsehappy.com/" target="_blank" rel="noopener noreferrer">webbläsare</a>.            </div>
-        <![endif]-->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><header id="header" class="site-header" role="banner">
-        <div class="logotype">
-            <a href="https://schibstedforbusiness.se">
-                <picture class="logotype__image">
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/10/Schibsted-for-Business-Logo.png.webp"/>
-<img src="https://schibstedforbusiness.se/wp-content/uploads/2021/10/Schibsted-for-Business-Logo.png" alt="Logotyp för Schibsted for business"/>
-</picture>
+        var scriptUrls = [];
 
-            </a>
-        </div>
-        <button type="button" class="site-header__nav-toggle" aria-label="Visa menyn">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        if (hasES2020Syntax()) {
+            if (polyfills.length) {
+                scriptUrls.push('https://polyfill.io/v3/polyfill.min.js?features=' + polyfills.join(','));
+            }
 
-        <nav id="main-nav" class="site-header__nav" aria-hidden="true" aria-label="Huvudmeny">
-            <ul id="menu-svenska-menyn" class="nav-container"><li id="menu-item-2849" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2849"><a href="#">Kom igång</a>
-<ul class="sub-menu">
-	<li id="menu-item-2851" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2851"><a href="https://schibstedforbusiness.se/marknadsforingsmal/">Marknadsföringsmål</a></li>
-	<li id="menu-item-2852" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2852"><a href="https://schibstedforbusiness.se/na-din-malgrup/">Nå din målgrupp</a></li>
-	<li id="menu-item-2850" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2850"><a href="https://schibstedforbusiness.se/kopsatt/">Köpsätt</a></li>
-</ul>
-</li>
-<li id="menu-item-3913" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3913"><a href="#">Produkter</a>
-<ul class="sub-menu">
-	<li id="menu-item-3763" class="menu-item menu-item-type-post_type_archive menu-item-object-produkter menu-item-3763"><a href="https://schibstedforbusiness.se/produkter/">Alla</a></li>
-	<li id="menu-item-2863" class="menu-item menu-item-type-post_type menu-item-object-produktkategori menu-item-2863"><a href="https://schibstedforbusiness.se/produktkategori/display/">Display</a></li>
-	<li id="menu-item-2862" class="menu-item menu-item-type-post_type menu-item-object-produktkategori menu-item-2862"><a href="https://schibstedforbusiness.se/produktkategori/online-video/">Online Video</a></li>
-	<li id="menu-item-2860" class="menu-item menu-item-type-post_type menu-item-object-produktkategori menu-item-2860"><a href="https://schibstedforbusiness.se/produktkategori/tv-godare/">TV (Godare)</a></li>
-	<li id="menu-item-2859" class="menu-item menu-item-type-post_type menu-item-object-produktkategori menu-item-2859"><a href="https://schibstedforbusiness.se/produktkategori/podcast/">Podcast</a></li>
-	<li id="menu-item-2861" class="menu-item menu-item-type-post_type menu-item-object-produktkategori menu-item-2861"><a href="https://schibstedforbusiness.se/produktkategori/integrationer/">Integrationer</a></li>
-	<li id="menu-item-2858" class="menu-item menu-item-type-post_type menu-item-object-produktkategori menu-item-2858"><a href="https://schibstedforbusiness.se/produktkategori/textnative/">Textnative</a></li>
-	<li id="menu-item-2857" class="menu-item menu-item-type-post_type menu-item-object-produktkategori menu-item-2857"><a href="https://schibstedforbusiness.se/produktkategori/rorlig-native/">Rörlig Native</a></li>
-	<li id="menu-item-2856" class="menu-item menu-item-type-post_type menu-item-object-produktkategori menu-item-2856"><a href="https://schibstedforbusiness.se/produktkategori/branded-content/">Branded Content</a></li>
-	<li id="menu-item-2855" class="menu-item menu-item-type-post_type menu-item-object-produktkategori menu-item-2855"><a href="https://schibstedforbusiness.se/produktkategori/socialt/">Socialt</a></li>
-	<li id="menu-item-2854" class="menu-item menu-item-type-post_type menu-item-object-produktkategori menu-item-2854"><a href="https://schibstedforbusiness.se/produktkategori/print/">Print</a></li>
-</ul>
-</li>
-<li id="menu-item-3907" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3907"><a href="#">Varumärken</a>
-<ul class="sub-menu">
-	<li id="menu-item-3908" class="menu-item menu-item-type-post_type_archive menu-item-object-varumarke menu-item-3908"><a href="https://schibstedforbusiness.se/varumarken/">Alla</a></li>
-	<li id="menu-item-2867" class="menu-item menu-item-type-post_type menu-item-object-varumarke menu-item-2867"><a href="https://schibstedforbusiness.se/varumarken/aftonbladet/">Aftonbladet</a></li>
-	<li id="menu-item-2868" class="menu-item menu-item-type-post_type menu-item-object-varumarke menu-item-2868"><a href="https://schibstedforbusiness.se/varumarken/blocket/">Blocket</a></li>
-	<li id="menu-item-2869" class="menu-item menu-item-type-post_type menu-item-object-varumarke menu-item-2869"><a href="https://schibstedforbusiness.se/varumarken/bytbil/">Bytbil</a></li>
-	<li id="menu-item-2870" class="menu-item menu-item-type-post_type menu-item-object-varumarke menu-item-2870"><a href="https://schibstedforbusiness.se/varumarken/godare/">Godare</a></li>
-	<li id="menu-item-2871" class="menu-item menu-item-type-post_type menu-item-object-varumarke menu-item-2871"><a href="https://schibstedforbusiness.se/varumarken/klart/">Klart</a></li>
-	<li id="menu-item-2872" class="menu-item menu-item-type-post_type menu-item-object-varumarke menu-item-2872"><a href="https://schibstedforbusiness.se/varumarken/omni/">Omni</a></li>
-	<li id="menu-item-2873" class="menu-item menu-item-type-post_type menu-item-object-varumarke menu-item-2873"><a href="https://schibstedforbusiness.se/varumarken/omni-ekonomi/">Omni Ekonomi</a></li>
-	<li id="menu-item-2874" class="menu-item menu-item-type-post_type menu-item-object-varumarke menu-item-2874"><a href="https://schibstedforbusiness.se/varumarken/prisjakt/">Prisjakt</a></li>
-	<li id="menu-item-2875" class="menu-item menu-item-type-post_type menu-item-object-varumarke menu-item-2875"><a href="https://schibstedforbusiness.se/varumarken/svenska-dagbladet/">Svenska Dagbladet</a></li>
-	<li id="menu-item-2876" class="menu-item menu-item-type-post_type menu-item-object-varumarke menu-item-2876"><a href="https://schibstedforbusiness.se/varumarken/svenska-dagbladet-naringsliv/">Svenska Dagbladet Näringsliv</a></li>
-	<li id="menu-item-2877" class="menu-item menu-item-type-post_type menu-item-object-varumarke menu-item-2877"><a href="https://schibstedforbusiness.se/varumarken/tv-nu/">tv.nu</a></li>
-	<li id="menu-item-2878" class="menu-item menu-item-type-post_type menu-item-object-varumarke menu-item-2878"><a href="https://schibstedforbusiness.se/varumarken/vinguiden/">Vinguiden</a></li>
-</ul>
-</li>
-<li id="menu-item-3914" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3914"><a href="#">Specifikationer</a>
-<ul class="sub-menu">
-	<li id="menu-item-3909" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3909"><a href="https://schibstedforbusiness.se/specifikationer/">Alla</a></li>
-	<li id="menu-item-2880" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2880"><a href="https://schibstedforbusiness.se/specifikationer/svenska-dagbladet-print/">Svenska dagbladet Print</a></li>
-	<li id="menu-item-2881" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2881"><a href="https://schibstedforbusiness.se/specifikationer/spellagen-2019/">Spellagen 2019</a></li>
-	<li id="menu-item-2882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2882"><a href="https://schibstedforbusiness.se/specifikationer/online-video/">Online Video</a></li>
-	<li id="menu-item-2883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2883"><a href="https://schibstedforbusiness.se/specifikationer/display/">Display</a></li>
-	<li id="menu-item-2884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2884"><a href="https://schibstedforbusiness.se/specifikationer/aftonbladet-print/">Aftonbladet print</a></li>
-</ul>
-</li>
-<li id="menu-item-4346" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4346"><a href="https://schibstedforbusiness.se/case/">Case</a></li>
-<li id="menu-item-2885" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2885"><a href="https://schibstedforbusiness.se/aktuellt/">Aktuellt</a></li>
-<li id="menu-item-2886" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2886"><a href="https://schibstedforbusiness.se/rapporter/">Rapporter</a></li>
-<li id="menu-item-2887" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2887"><a href="https://schibstedforbusiness.se/brandstudio/">Brand Studio</a></li>
-<li id="menu-item-3647" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3647"><a href="#">Om oss</a>
-<ul class="sub-menu">
-	<li id="menu-item-3991" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3991"><a href="https://schibstedforbusiness.se/schibsted-marketing-services/">Schibsted Marketing Services</a></li>
-	<li id="menu-item-3636" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3636"><a href="https://schibstedforbusiness.se/iab-gold-standard/">Gold Standard</a></li>
-	<li id="menu-item-3642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3642"><a href="https://schibstedforbusiness.se/kontakta-oss/">Kontakta oss</a></li>
-</ul>
-</li>
-</ul>            <div class="display-flex">
-                <div id="searchBtn"><i class="far fa-search"></i></div>
-                <div class="site-header__nav-lang">
-                    	<li class="lang-item lang-item-2 lang-item-en lang-item-first"><a  lang="en-GB" hreflang="en-GB" href="https://schibstedforbusiness.se/en/home/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAt1BMVEWSmb66z+18msdig8La3u+tYX9IaLc7W7BagbmcUW+kqMr/q6n+//+hsNv/lIr/jIGMnNLJyOP9/fyQttT/wb3/////aWn+YWF5kNT0oqz0i4ueqtIZNJjhvt/8gn//WVr/6+rN1+o9RKZwgcMPJpX/VFT9UEn+RUX8Ozv2Ly+FGzdYZrfU1e/8LS/lQkG/mbVUX60AE231hHtcdMb0mp3qYFTFwNu3w9prcqSURGNDaaIUMX5FNW5wYt7AAAAAjklEQVR4AR3HNUJEMQCGwf+L8RR36ajR+1+CEuvRdd8kK9MNAiRQNgJmVDAt1yM6kSzYVJUsPNssAk5N7ZFKjVNFAY4co6TAOI+kyQm+LFUEBEKKzuWUNB7rSH/rSnvOulOGk+QlXTBqMIrfYX4tSe2nP3iRa/KNK7uTmWJ5a9+erZ3d+18od4ytiZdvZyuKWy8o3UpTVAAAAABJRU5ErkJggg==" alt="English" width="16" height="11" style="width: 16px; height: 11px;" /></a></li>
-                </div>
-            </div>
-        </nav>
-        <div class="searchform"><form class="form form--search" role="search" action="https://schibstedforbusiness.se/">
-    <label>
-        <!-- <span class="screen-reader-only">Sök efter:</span> -->
-        <input
-            class="search-form__input"
-            type="search"
-            placeholder="Sök..."
-            value=""
-            name="s"
-        >
-    </label>
-    <button type="submit" class="btn btn-search search__submit">Sök</button>
-</form>
-            <span id="closeSearch"><i class="far fa-times"></i></span>
-        </div>
-</header>
-        <main>
-                        <div class="container">
-                <div class="page__content">
-    <div class="hero frontpage" style="background-image: url('https://schibstedforbusiness.se/wp-content/uploads/2021/10/Hero-woman-relaxed2.jpg');">
-    <div class="container allow-container-padding">
-        <div class="hero__text">
-            <h1><em>Annonsera hos Schibsted</em><br />
-Den enklaste vägen<br />
-till svenska folket</h1>
-            </div>
-    </div>
-</div>
+            (()=>{"use strict";var e,a,t,r,n,c={},o={};function d(e){var a=o[e];if(void 0!==a)return a.exports;var t=o[e]={id:e,loaded:!1,exports:{}};return c[e].call(t.exports,t,t.exports,d),t.loaded=!0,t.exports}d.m=c,e=[],d.O=(a,t,r,n)=>{if(!t){var c=1/0;for(i=0;i<e.length;i++){for(var[t,r,n]=e[i],o=!0,f=0;f<t.length;f++)(!1&n||c>=n)&&Object.keys(d.O).every((e=>d.O[e](t[f])))?t.splice(f--,1):(o=!1,n<c&&(c=n));if(o){e.splice(i--,1);var b=r();void 0!==b&&(a=b)}}return a}n=n||0;for(var i=e.length;i>0&&e[i-1][2]>n;i--)e[i]=e[i-1];e[i]=[t,r,n]},d.n=e=>{var a=e&&e.__esModule?()=>e.default:()=>e;return d.d(a,{a}),a},d.d=(e,a)=>{for(var t in a)d.o(a,t)&&!d.o(e,t)&&Object.defineProperty(e,t,{enumerable:!0,get:a[t]})},d.f={},d.e=e=>Promise.all(Object.keys(d.f).reduce(((a,t)=>(d.f[t](e,a),a)),[])),d.u=e=>"ab."+({113:"LazySvgIcon16",225:"LazySvgIcon8",572:"LazySvgIcon6",667:"LazySvgIcon25",867:"LazySvgIcon23",1472:"LazySvgIcon24",1646:"BettingTips",1695:"LazySvgIcon14",2525:"LazySvgIcon2",2540:"MyStreamOnboarding",2695:"Schedule",2713:"LazySvgIcon17",2798:"EventStatistics",2966:"LazySvgIcon27",3045:"LazySvgIcon10",3128:"LazySvgIcon26",3610:"LazySvgIcon13",3777:"LazySvgIcon38",3892:"PageNotFound",4275:"EventStandings",4445:"LazySvgIcon30",5008:"EventInfo",5044:"LazySvgIcon35",5094:"EventReport",5421:"LazySvgIcon1",5457:"LazySvgIcon5",5568:"LazySvgIcon19",5795:"LazySvgIcon32",5990:"LazySvgIcon0",6174:"Team",6298:"EventLiveblog",6393:"LazySvgIcon9",6497:"LazySvgIcon33",6673:"LazySvgIcon20",6737:"LazySvgIcon15",6867:"LazySvgIcon18",6918:"UserProfile",6938:"LazySvgIcon4",7217:"Event",7283:"LazySvgIcon37",7328:"LazySvgIcon31",7334:"LazySvgIcon21",7531:"LazySvgIcon11",7543:"LazySvgIcon12",7851:"EventLineups",8262:"LazySvgIcon36",8332:"LazySvgIcon34",8336:"TeamVsTeam",8507:"Person",8557:"Fantasy",8660:"LazySvgIcon28",8804:"LazySvgIcon7",8892:"Season",9113:"Formula1EventReports",9175:"LazySvgIcon3",9297:"Tournaments",9356:"LazySvgIcon29",9546:"MyStream",9656:"LazySvgIcon22"}[e]||e)+"."+{102:"cdc7b3fc6d",113:"44f667e187",135:"9ea0a9073a",225:"b5e048c86e",572:"e88f7200b7",667:"0588d83d0d",689:"3b1f95f073",840:"c7a8b5d4d2",867:"2170069488",954:"9451cd7d7d",1472:"b432bd12f3",1505:"4ab76b1624",1646:"2b1c90718f",1695:"8badad8131",1838:"33cb089d58",2401:"6c0cad2f45",2488:"90e5133293",2525:"a359abd515",2540:"afe9be903b",2695:"4f1714112a",2713:"8125d96130",2732:"64913881c9",2798:"52130315bf",2966:"04cb164ab5",3045:"9dfcda9870",3128:"9cdb1a1177",3269:"f5844e84c4",3296:"e4157744a2",3610:"2f07823517",3702:"ebead89539",3777:"603b240edd",3892:"ad81da6e4d",4275:"5f47d164cb",4445:"2c60c1d901",4465:"d74471506d",4519:"0908509623",4616:"43c41f8eff",4813:"67611ce72a",5008:"d74e2864fb",5044:"ffad1b7dba",5094:"3a7d4864b0",5262:"5152767ddb",5273:"0e1e00b84e",5421:"4e81b13169",5457:"31ce29d9d5",5568:"7df439bd9d",5795:"e47b709a24",5990:"f65c2809a7",6108:"365a305f7d",6174:"6067ef7066",6298:"127cecd38e",6341:"f234a51e6a",6393:"f9771e1006",6408:"bd89147250",6496:"826c4183ec",6497:"a54734ffb4",6638:"8e441d3fb8",6673:"ea4f3fce3f",6675:"667ea53c18",6737:"64cc9c0c57",6867:"b4ded5e6aa",6918:"c25b432b6f",6938:"d6974a1440",7217:"5f64a6437b",7283:"5816b18530",7328:"9fe7c52dec",7334:"88909f3cac",7472:"dd9fd81a71",7531:"33a76ec75b",7543:"1cba32e6ff",7851:"8aa921d806",7999:"50affc21bc",8034:"f47ca10ba0",8262:"7d881fb647",8332:"4d1e62edea",8336:"c54a2d9c33",8507:"bba24e57bb",8557:"8a4df1f960",8660:"7cddd2e433",8673:"ff69999a4a",8682:"62c06f9658",8804:"7c39b084cb",8892:"bfa335acc5",8933:"70cbf7b643",9108:"5d294d993a",9113:"858d7cb575",9175:"61078680f8",9297:"0ae691f5cb",9329:"cd2bcd3e06",9356:"9fa0e1271c",9448:"91a66c51b1",9546:"2f18e0897d",9600:"91e521440a",9656:"69f8531361",9981:"71b596223d"}[e]+".js",d.miniCssF=e=>"ab.main."+{102:"c8031e7079",135:"fe92918197",689:"9108889aa4",840:"bbcf6cf43c",954:"fc28c3c9cc",2401:"2a8d18c15f",2488:"c4ed927370",2732:"f72aa6eeb6",3533:"db205b65e8",3702:"a07ca3826d",4465:"fec1bcb06e",4519:"3671ebb10a",4616:"c9647d74fa",4813:"185a3f333b",5262:"8aaba590e8",5273:"199f825430",6108:"23249cf195",6341:"82ea5e4a0b",6408:"b6ab8351e5",6496:"145cff4d71",6638:"cd00a16826",7472:"c4df31780a",7999:"eca69938e7",8034:"c2cc8c80df",8673:"44e858b600",8682:"9c9ae5e361",8933:"6f28d49206",9448:"1149019636",9600:"6e1ed73d1e",9981:"a11628794e"}[e]+".css",d.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(e){if("object"==typeof window)return window}}(),d.hmd=e=>((e=Object.create(e)).children||(e.children=[]),Object.defineProperty(e,"exports",{enumerable:!0,set:()=>{throw new Error("ES Modules may not assign module.exports or exports.*, Use ESM export syntax, instead: "+e.id)}}),e),d.o=(e,a)=>Object.prototype.hasOwnProperty.call(e,a),a={},t="sports-web:",d.l=(e,r,n,c)=>{if(a[e])a[e].push(r);else{var o,f;if(void 0!==n)for(var b=document.getElementsByTagName("script"),i=0;i<b.length;i++){var s=b[i];if(s.getAttribute("src")==e||s.getAttribute("data-webpack")==t+n){o=s;break}}o||(f=!0,(o=document.createElement("script")).charset="utf-8",o.timeout=120,d.nc&&o.setAttribute("nonce",d.nc),o.setAttribute("data-webpack",t+n),o.src=e),a[e]=[r];var l=(t,r)=>{o.onerror=o.onload=null,clearTimeout(v);var n=a[e];if(delete a[e],o.parentNode&&o.parentNode.removeChild(o),n&&n.forEach((e=>e(r))),t)return t(r)},v=setTimeout(l.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=l.bind(null,o.onerror),o.onload=l.bind(null,o.onload),f&&document.head.appendChild(o)}},d.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},d.nmd=e=>(e.paths=[],e.children||(e.children=[]),e),d.p="/dist/",r=e=>new Promise(((a,t)=>{var r=d.miniCssF(e),n=d.p+r;if(((e,a)=>{for(var t=document.getElementsByTagName("link"),r=0;r<t.length;r++){var n=(o=t[r]).getAttribute("data-href")||o.getAttribute("href");if("stylesheet"===o.rel&&(n===e||n===a))return o}var c=document.getElementsByTagName("style");for(r=0;r<c.length;r++){var o;if((n=(o=c[r]).getAttribute("data-href"))===e||n===a)return o}})(r,n))return a();((e,a,t,r)=>{var n=document.createElement("link");n.rel="stylesheet",n.type="text/css",n.onerror=n.onload=c=>{if(n.onerror=n.onload=null,"load"===c.type)t();else{var o=c&&("load"===c.type?"missing":c.type),d=c&&c.target&&c.target.href||a,f=new Error("Loading CSS chunk "+e+" failed.\n("+d+")");f.code="CSS_CHUNK_LOAD_FAILED",f.type=o,f.request=d,n.parentNode.removeChild(n),r(f)}},n.href=a,document.head.appendChild(n)})(e,n,a,t)})),n={3666:0},d.f.miniCss=(e,a)=>{n[e]?a.push(n[e]):0!==n[e]&&{102:1,135:1,689:1,840:1,954:1,2401:1,2488:1,2732:1,3702:1,4465:1,4519:1,4616:1,4813:1,5262:1,5273:1,6108:1,6341:1,6408:1,6496:1,6638:1,7472:1,7999:1,8034:1,8673:1,8682:1,8933:1,9448:1,9600:1,9981:1}[e]&&a.push(n[e]=r(e).then((()=>{n[e]=0}),(a=>{throw delete n[e],a})))},(()=>{var e={3666:0,3533:0};d.f.j=(a,t)=>{var r=d.o(e,a)?e[a]:void 0;if(0!==r)if(r)t.push(r[2]);else if(/^(2(401|488|732)|3(533|666|702)|4(465|519|616|813)|52(62|73)|6((10|40|63)8|341|496|89)|8(034|40|673|682|933)|9(448|54|600|981)|102|135|7472|7999)$/.test(a))e[a]=0;else{var n=new Promise(((t,n)=>r=e[a]=[t,n]));t.push(r[2]=n);var c=d.p+d.u(a),o=new Error;d.l(c,(t=>{if(d.o(e,a)&&(0!==(r=e[a])&&(e[a]=void 0),r)){var n=t&&("load"===t.type?"missing":t.type),c=t&&t.target&&t.target.src;o.message="Loading chunk "+a+" failed.\n("+n+": "+c+")",o.name="ChunkLoadError",o.type=n,o.request=c,r[1](o)}}),"chunk-"+a,a)}},d.O.j=a=>0===e[a];var a=(a,t)=>{var r,n,[c,o,f]=t,b=0;for(r in o)d.o(o,r)&&(d.m[r]=o[r]);if(f)var i=f(d);for(a&&a(t);b<c.length;b++)n=c[b],d.o(e,n)&&e[n]&&e[n][0](),e[c[b]]=0;return d.O(i)},t=self.webpackChunksports_web=self.webpackChunksports_web||[];t.forEach(a.bind(null,0)),t.push=a.bind(null,t.push.bind(t))})()})();
+                scriptUrls.push('/dist/ab.5518.126af0ffaf.js');
+                scriptUrls.push('/dist/ab.main.4a9191520c.js');
+        } else {
+            polyfills.push(
+                'es2015',
+                'es2016',
+                'es2017',
+                'es2018',
+                'es2019',
+                'es2020',
+                'dom4'
+            );
+            scriptUrls.push('https://polyfill.io/v3/polyfill.min.js?features=' + polyfills.join(','));
+            scriptUrls.push('https://cdn.jsdelivr.net/npm/regenerator-runtime@0.11.0/runtime.min.js');
 
+            scriptUrls.push('/dist/legacy.ab.runtime.36f4327d81.js');
+                scriptUrls.push('/dist/legacy.ab.5518.2813c4cb96.js');
+                scriptUrls.push('/dist/legacy.ab.main.6ca28d2b0d.js');
+        }
 
-<section id="slider-block_618e78d141ab1">
-    <div class="varumarke-slider">
-        <h3>Våra varumärken</h3>
-        <div class="glide logotyp">
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                                                <li class="glide__slides--object">
-                                <a title="Vinguiden" class="glide__slides--object-logo" href="https://schibstedforbusiness.se/varumarken/vinguiden/">
-                                    <picture loading="lazy" class="attachment-thumbnail size-thumbnail wp-post-image">
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2022/01/vinguiden-96x96-border-2.png.webp"/>
-<img loading="lazy" width="96" height="96" src="https://schibstedforbusiness.se/wp-content/uploads/2022/01/vinguiden-96x96-border-2.png" alt=""/>
-</picture>
-                                </a>
-                            </li>
-                                                    <li class="glide__slides--object">
-                                <a title="Tv.nu" class="glide__slides--object-logo" href="https://schibstedforbusiness.se/varumarken/tv-nu/">
-                                    <picture class="attachment-thumbnail size-thumbnail wp-post-image" loading="lazy">
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2022/01/tv.nu_.png.webp"/>
-<img width="96" height="96" src="https://schibstedforbusiness.se/wp-content/uploads/2022/01/tv.nu_.png" alt="" loading="lazy"/>
-</picture>
-                                </a>
-                            </li>
-                                                    <li class="glide__slides--object">
-                                <a title="Svenska Dagbladet Näringsliv" class="glide__slides--object-logo" href="https://schibstedforbusiness.se/varumarken/svenska-dagbladet-naringsliv/">
-                                    <picture class="attachment-thumbnail size-thumbnail wp-post-image" loading="lazy">
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2022/01/SvD_Nliv_Svart.png.webp"/>
-<img width="96" height="96" src="https://schibstedforbusiness.se/wp-content/uploads/2022/01/SvD_Nliv_Svart.png" alt="" loading="lazy"/>
-</picture>
-                                </a>
-                            </li>
-                                                    <li class="glide__slides--object">
-                                <a title="Svenska Dagbladet" class="glide__slides--object-logo" href="https://schibstedforbusiness.se/varumarken/svenska-dagbladet/">
-                                    <picture class="attachment-thumbnail size-thumbnail wp-post-image" loading="lazy">
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2022/05/SvD-150x150.png.webp 150w, https://schibstedforbusiness.se/wp-content/uploads/2022/05/SvD-120x119.png.webp 120w, https://schibstedforbusiness.se/wp-content/uploads/2022/05/SvD.png.webp 162w" sizes="(max-width: 150px) 100vw, 150px"/>
-<img width="150" height="150" src="https://schibstedforbusiness.se/wp-content/uploads/2022/05/SvD-150x150.png" alt="" loading="lazy" srcset="https://schibstedforbusiness.se/wp-content/uploads/2022/05/SvD-150x150.png 150w, https://schibstedforbusiness.se/wp-content/uploads/2022/05/SvD-120x119.png 120w, https://schibstedforbusiness.se/wp-content/uploads/2022/05/SvD.png 162w" sizes="(max-width: 150px) 100vw, 150px"/>
-</picture>
-                                </a>
-                            </li>
-                                                    <li class="glide__slides--object">
-                                <a title="Prisjakt" class="glide__slides--object-logo" href="https://schibstedforbusiness.se/varumarken/prisjakt/">
-                                    <picture class="attachment-thumbnail size-thumbnail wp-post-image" loading="lazy">
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2022/02/prisjakt.png.webp"/>
-<img width="96" height="96" src="https://schibstedforbusiness.se/wp-content/uploads/2022/02/prisjakt.png" alt="" loading="lazy"/>
-</picture>
-                                </a>
-                            </li>
-                                                    <li class="glide__slides--object">
-                                <a title="Omni Ekonomi" class="glide__slides--object-logo" href="https://schibstedforbusiness.se/varumarken/omni-ekonomi/">
-                                    <picture class="attachment-thumbnail size-thumbnail wp-post-image" loading="lazy">
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2022/01/omni_ekonomi.png.webp"/>
-<img width="96" height="96" src="https://schibstedforbusiness.se/wp-content/uploads/2022/01/omni_ekonomi.png" alt="" loading="lazy"/>
-</picture>
-                                </a>
-                            </li>
-                                                    <li class="glide__slides--object">
-                                <a title="Omni" class="glide__slides--object-logo" href="https://schibstedforbusiness.se/varumarken/omni/">
-                                    <picture class="attachment-thumbnail size-thumbnail wp-post-image" loading="lazy">
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2022/01/omni-150x150.png.webp 150w, https://schibstedforbusiness.se/wp-content/uploads/2022/01/omni-120x120.png.webp 120w, https://schibstedforbusiness.se/wp-content/uploads/2022/01/omni.png.webp 161w" sizes="(max-width: 150px) 100vw, 150px"/>
-<img width="150" height="150" src="https://schibstedforbusiness.se/wp-content/uploads/2022/01/omni-150x150.png" alt="Omni" loading="lazy" srcset="https://schibstedforbusiness.se/wp-content/uploads/2022/01/omni-150x150.png 150w, https://schibstedforbusiness.se/wp-content/uploads/2022/01/omni-120x120.png 120w, https://schibstedforbusiness.se/wp-content/uploads/2022/01/omni.png 161w" sizes="(max-width: 150px) 100vw, 150px"/>
-</picture>
-                                </a>
-                            </li>
-                                                    <li class="glide__slides--object">
-                                <a title="Klart" class="glide__slides--object-logo" href="https://schibstedforbusiness.se/varumarken/klart/">
-                                    <picture class="attachment-thumbnail size-thumbnail wp-post-image" loading="lazy">
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/11/klart-150x150.png.webp 150w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/klart-120x119.png.webp 120w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/klart.png.webp 162w" sizes="(max-width: 150px) 100vw, 150px"/>
-<img width="150" height="150" src="https://schibstedforbusiness.se/wp-content/uploads/2021/11/klart-150x150.png" alt="" loading="lazy" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/11/klart-150x150.png 150w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/klart-120x119.png 120w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/klart.png 162w" sizes="(max-width: 150px) 100vw, 150px"/>
-</picture>
-                                </a>
-                            </li>
-                                                    <li class="glide__slides--object">
-                                <a title="Godare" class="glide__slides--object-logo" href="https://schibstedforbusiness.se/varumarken/godare/">
-                                    <picture class="attachment-thumbnail size-thumbnail wp-post-image" loading="lazy">
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/11/godare-150x150.png.webp 150w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/godare-250x250.png.webp 250w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/godare-700x700.png.webp 700w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/godare-768x768.png.webp 768w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/godare-1536x1536.png.webp 1536w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/godare-120x120.png.webp 120w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/godare.png.webp 1600w" sizes="(max-width: 150px) 100vw, 150px"/>
-<img width="150" height="150" src="https://schibstedforbusiness.se/wp-content/uploads/2021/11/godare-150x150.png" alt="godare" loading="lazy" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/11/godare-150x150.png 150w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/godare-250x250.png 250w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/godare-700x700.png 700w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/godare-768x768.png 768w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/godare-1536x1536.png 1536w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/godare-120x120.png 120w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/godare.png 1600w" sizes="(max-width: 150px) 100vw, 150px"/>
-</picture>
-                                </a>
-                            </li>
-                                                    <li class="glide__slides--object">
-                                <a title="Bytbil" class="glide__slides--object-logo" href="https://schibstedforbusiness.se/varumarken/bytbil/">
-                                    <picture class="attachment-thumbnail size-thumbnail wp-post-image" loading="lazy">
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/11/bytbil-1.png.webp 150w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/bytbil-1-120x62.png.webp 120w" sizes="(max-width: 150px) 100vw, 150px"/>
-<img width="150" height="78" src="https://schibstedforbusiness.se/wp-content/uploads/2021/11/bytbil-1.png" alt="" loading="lazy" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/11/bytbil-1.png 150w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/bytbil-1-120x62.png 120w" sizes="(max-width: 150px) 100vw, 150px"/>
-</picture>
-                                </a>
-                            </li>
-                                                    <li class="glide__slides--object">
-                                <a title="Blocket" class="glide__slides--object-logo" href="https://schibstedforbusiness.se/varumarken/blocket/">
-                                    <picture class="attachment-thumbnail size-thumbnail wp-post-image" loading="lazy">
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/11/Blocket_logotyp_RGB_Large.jpg.webp 128w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/Blocket_logotyp_RGB_Large-120x58.jpg.webp 120w" sizes="(max-width: 128px) 100vw, 128px"/>
-<img width="128" height="62" src="https://schibstedforbusiness.se/wp-content/uploads/2021/11/Blocket_logotyp_RGB_Large.jpg" alt="" loading="lazy" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/11/Blocket_logotyp_RGB_Large.jpg 128w, https://schibstedforbusiness.se/wp-content/uploads/2021/11/Blocket_logotyp_RGB_Large-120x58.jpg 120w" sizes="(max-width: 128px) 100vw, 128px"/>
-</picture>
-                                </a>
-                            </li>
-                                                    <li class="glide__slides--object">
-                                <a title="Aftonbladet" class="glide__slides--object-logo" href="https://schibstedforbusiness.se/varumarken/aftonbladet/">
-                                    <picture class="attachment-thumbnail size-thumbnail wp-post-image" loading="lazy">
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/10/vZ40IPkR_400x400-150x150.jpg.webp 150w, https://schibstedforbusiness.se/wp-content/uploads/2021/10/vZ40IPkR_400x400-250x250.jpg.webp 250w, https://schibstedforbusiness.se/wp-content/uploads/2021/10/vZ40IPkR_400x400-120x120.jpg.webp 120w, https://schibstedforbusiness.se/wp-content/uploads/2021/10/vZ40IPkR_400x400.jpg.webp 400w" sizes="(max-width: 150px) 100vw, 150px"/>
-<img width="150" height="150" src="https://schibstedforbusiness.se/wp-content/uploads/2021/10/vZ40IPkR_400x400-150x150.jpg" alt="" loading="lazy" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/10/vZ40IPkR_400x400-150x150.jpg 150w, https://schibstedforbusiness.se/wp-content/uploads/2021/10/vZ40IPkR_400x400-250x250.jpg 250w, https://schibstedforbusiness.se/wp-content/uploads/2021/10/vZ40IPkR_400x400-120x120.jpg 120w, https://schibstedforbusiness.se/wp-content/uploads/2021/10/vZ40IPkR_400x400.jpg 400w" sizes="(max-width: 150px) 100vw, 150px"/>
-</picture>
-                                </a>
-                            </li>
-                                        </ul>
-            </div>
-        </div>
-    </div>
-</section>
+        var body = document.body || document.getElementsByTagName('body')[0];
 
-
-<section id="split-textblock-block-block_6241c681951b2">
-    <div class="split-textblock order-1">
-        <div class="split-textblock__text order-1"><h3>Nyhet! Vi lanserar <a href="https://www.godare.se/">Godare.se</a></h3>
-<p><em>Pannor som fräser. Grytor som puttrar. Dofter. Smaker. </em><br />
-<em>Nog är väl köket den mest magiska platsen på jorden, ändå? </em><br />
-<em>Det tycker i alla fall vi.</em></p>
-<p>Upptäck Sveriges ​populäraste matprofiler​​ och tusentals recept på Aftonbladets nya sajt Godare.se. Med en kombination där det linjära möter det digitala erbjuder vi annonsmarknaden en stabil räckvidd i en inspirerande kontext.</p>
-<p>Kontakta oss så berättar vi mer eller läs mer om Godare <a href="https://schibstedforbusiness.se/varumarken/godare/">här</a>.</p>
-<p>&nbsp;</p>
-<p style="text-align: left;">        <a href="/kontakt/" class="btn shortcode btn-blue" role="button">
-            Kontakta oss        </a>
-    </p>
-</div>
-                    <a 
-            href="https://schibstedforbusiness.se/wp-content/uploads/2022/08/Puff-S4B-700x365.jpg" 
-            data-lightbox="image-split-textblock-block-block_6241c681951b2" 
-            class="split-textblock__photo"
-                        >
-                <picture>
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2022/08/Puff-S4B-700x365.jpg.webp"/>
-<img src="https://schibstedforbusiness.se/wp-content/uploads/2022/08/Puff-S4B-700x365.jpg" alt="Nyhet! Godare.se"/>
-</picture>
-
-            </a>
-            </div>
-</section>
-
-<script>
-    // lightbox.option({
-    //   'resizeDuration': 200,
-    //   'wrapAround': true
-    // })
-</script>
-
-
-
-<section id="link-block-block_6177f2367b957">
-            <div class="square-link-holder">
-                            <a href="https://schibstedforbusiness.se/marknadsforingsmal/" class="no-underline square-link__object small">
-                                            <picture>
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/10/target-correct-150x150.png.webp"/>
-<img src="https://schibstedforbusiness.se/wp-content/uploads/2021/10/target-correct-150x150.png" alt="Ikon"/>
-</picture>
-
-                                            <p>Vad är dina marknadsföringsmål?</p>
-                                    </a>
-                            <a href="https://schibstedforbusiness.se/na-din-malgrup/" class="no-underline square-link__object small">
-                                            <picture>
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/10/people-alt-24px-150x150.png.webp"/>
-<img src="https://schibstedforbusiness.se/wp-content/uploads/2021/10/people-alt-24px-150x150.png" alt="Ikon"/>
-</picture>
-
-                                            <p>Så hittar du din målgrupp</p>
-                                    </a>
-                            <a href="https://schibstedforbusiness.se/kopsatt/" class="no-underline square-link__object small">
-                                            <picture>
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/10/shopping-cart-empty-1-150x150.png.webp"/>
-<img src="https://schibstedforbusiness.se/wp-content/uploads/2021/10/shopping-cart-empty-1-150x150.png" alt="Ikon"/>
-</picture>
-
-                                            <p>Se hur enkelt det är att köpa annonsering</p>
-                                    </a>
-                            <a href="https://schibstedforbusiness.se/tv-godare/" class="no-underline square-link__object small">
-                                            <picture>
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/10/vintage-tv-2-150x150.png.webp"/>
-<img src="https://schibstedforbusiness.se/wp-content/uploads/2021/10/vintage-tv-2-150x150.png" alt="Ikon"/>
-</picture>
-
-                                            <p>Kika in Sveriges enda renodlade mat-tv-kanal</p>
-                                    </a>
-                    </div>
-    </section>
-
-
-<section id="split-textblock-block-block_618ff1c334b50">
-    <div class="split-textblock order-0">
-        <div class="split-textblock__text order-0"><h3>Kronfågel nådde 46 % av Sveriges befolkning på 24 timmar</h3>
-<p>Kronfågel använde Sweden 24 för att få snabb räckvidd för deras produkter Shichimi-Kyckling och Kycklingsteak American Rub inför grillsäsongen. Då Kronfågel har en bred målgrupp var Sweden 24 en perfekt match. Målet med kampanjen var att nå ut till många människor på kort tid och uppmana till nedladdning av en rabattkupong.</p>
-</div>
-                <div class="split-textblock__photo">
-            <picture>
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/11/Kronfagel-700x365.png.webp"/>
-<img src="https://schibstedforbusiness.se/wp-content/uploads/2021/11/Kronfagel-700x365.png" alt=""/>
-</picture>
-
-        </div>
-            </div>
-</section>
-
-
-
-
-<section id="split-textblock-block-block_618ff050291d1">
-    <div class="split-textblock order-1">
-        <div class="split-textblock__text order-1"><h3>Om Schibsted</h3>
-<p>Det som började som ett boktryckeri 1839 är nu en nordisk familj av digitala konsumentvarumärken. Många av de tjänster som förr samlades i den traditionella papperstidningen, så som väder, köp och -säljannonser och tv-tablå, finns nu som egna digitala varumärken i Schibsteds portfölj.</p>
-<p>Schibsted når över 8 av 10 svenskar varje vecka där tjänsterna genomsyrar användarens vardag. Detta medför att vi kan leverera på vårt samhällsansvar, nämligen att finansiera och beskydda den svenska demokratin genom fri press.</p>
-<p style="text-align: right;"><a href="https://schibsted.com/" target="_blank" rel="noopener">Läs mer om oss  &gt;&gt;</a></p>
-</div>
-                <div class="split-textblock__photo">
-            <picture>
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/11/Schibsted-700x365.jpg.webp"/>
-<img src="https://schibstedforbusiness.se/wp-content/uploads/2021/11/Schibsted-700x365.jpg" alt=""/>
-</picture>
-
-        </div>
-            </div>
-</section>
-
-
-
-<section id="latest-news-block-block_617919c698cbb" class="latest-news force-full bg-nude">
-    <div class="container allow-container-padding">
-        <h3>Aktuellt</h3>
-        <div class="latest-news-holder block">
-                            <a href="https://schibstedforbusiness.se/sa-matchar-du-din-forstapartsdata-pa-sveriges-storsta-sajter%ef%bf%bc/" class="news-object block no-underline" id="id-4128">
-                    <div class="news-object__image">
-                        <picture class="attachment-post-thumbnail size-post-thumbnail wp-post-image" loading="lazy">
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2022/08/Skärmavbild-2022-08-10-kl.-16.48.30.png.webp 1367w, https://schibstedforbusiness.se/wp-content/uploads/2022/08/Skärmavbild-2022-08-10-kl.-16.48.30-250x94.png.webp 250w, https://schibstedforbusiness.se/wp-content/uploads/2022/08/Skärmavbild-2022-08-10-kl.-16.48.30-700x263.png.webp 700w, https://schibstedforbusiness.se/wp-content/uploads/2022/08/Skärmavbild-2022-08-10-kl.-16.48.30-768x289.png.webp 768w, https://schibstedforbusiness.se/wp-content/uploads/2022/08/Skärmavbild-2022-08-10-kl.-16.48.30-120x45.png.webp 120w" sizes="(max-width: 1367px) 100vw, 1367px"/>
-<img width="1367" height="514" src="https://schibstedforbusiness.se/wp-content/uploads/2022/08/Skärmavbild-2022-08-10-kl.-16.48.30.png" alt="" loading="lazy" srcset="https://schibstedforbusiness.se/wp-content/uploads/2022/08/Skärmavbild-2022-08-10-kl.-16.48.30.png 1367w, https://schibstedforbusiness.se/wp-content/uploads/2022/08/Skärmavbild-2022-08-10-kl.-16.48.30-250x94.png 250w, https://schibstedforbusiness.se/wp-content/uploads/2022/08/Skärmavbild-2022-08-10-kl.-16.48.30-700x263.png 700w, https://schibstedforbusiness.se/wp-content/uploads/2022/08/Skärmavbild-2022-08-10-kl.-16.48.30-768x289.png 768w, https://schibstedforbusiness.se/wp-content/uploads/2022/08/Skärmavbild-2022-08-10-kl.-16.48.30-120x45.png 120w" sizes="(max-width: 1367px) 100vw, 1367px"/>
-</picture>
-                    </div>
-                    <div class="news-object__meta">
-                        <div class="news-object__meta-title">
-                            <h4>Så matchar du din förstapartsdata på Sveriges största sajter</h4>
-                        </div>
-                        <div class="news-object__meta-date">
-                                                        <div class="no-underline">
-                                <em>
-                                    <time class="post__updated" datetime="2022-08-10">
-                                        2022-08-10 | Nyheter                                    </time>
-                                </em>
-                            </div>
-                        </div>
-                        <div class="news-object__meta-description">
-                            <p>
-                                Rikta din annonsering på Schibsteds sajter mot din egen CRM-data. Genom Schibsted Match stärker du både din&hellip;                            </p>
-                        </div>
-                    </div>
-                </a>
-                                <a href="https://schibstedforbusiness.se/schibsted-ar-certifierad-enligt-gold-standard/" class="news-object block no-underline" id="id-3786">
-                    <div class="news-object__image">
-                        <picture class="attachment-post-thumbnail size-post-thumbnail wp-post-image" loading="lazy">
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2022/06/hero-goldstandard-news.jpg.webp 2494w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/hero-goldstandard-news-250x100.jpg.webp 250w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/hero-goldstandard-news-700x281.jpg.webp 700w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/hero-goldstandard-news-768x308.jpg.webp 768w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/hero-goldstandard-news-1536x616.jpg.webp 1536w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/hero-goldstandard-news-2048x821.jpg.webp 2048w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/hero-goldstandard-news-120x48.jpg.webp 120w" sizes="(max-width: 2494px) 100vw, 2494px"/>
-<img width="2494" height="1000" src="https://schibstedforbusiness.se/wp-content/uploads/2022/06/hero-goldstandard-news.jpg" alt="" loading="lazy" srcset="https://schibstedforbusiness.se/wp-content/uploads/2022/06/hero-goldstandard-news.jpg 2494w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/hero-goldstandard-news-250x100.jpg 250w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/hero-goldstandard-news-700x281.jpg 700w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/hero-goldstandard-news-768x308.jpg 768w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/hero-goldstandard-news-1536x616.jpg 1536w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/hero-goldstandard-news-2048x821.jpg 2048w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/hero-goldstandard-news-120x48.jpg 120w" sizes="(max-width: 2494px) 100vw, 2494px"/>
-</picture>
-                    </div>
-                    <div class="news-object__meta">
-                        <div class="news-object__meta-title">
-                            <h4>Schibsted är certifierad enligt Gold Standard</h4>
-                        </div>
-                        <div class="news-object__meta-date">
-                                                        <div class="no-underline">
-                                <em>
-                                    <time class="post__updated" datetime="2022-06-20">
-                                        2022-06-20 | Nyheter                                    </time>
-                                </em>
-                            </div>
-                        </div>
-                        <div class="news-object__meta-description">
-                            <p>
-                                Vår vision är att vara 100% Brand Safe men vi lever i föränderliga tider och därför krävs&hellip;                            </p>
-                        </div>
-                    </div>
-                </a>
-                                <a href="https://schibstedforbusiness.se/politisk-kommunikation-sa-tycker-valjarna/" class="news-object block no-underline" id="id-3596">
-                    <div class="news-object__image">
-                        <picture class="attachment-post-thumbnail size-post-thumbnail wp-post-image" loading="lazy">
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2022/06/Politisk-kommunikation-2.png.webp 1066w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/Politisk-kommunikation-2-250x112.png.webp 250w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/Politisk-kommunikation-2-700x314.png.webp 700w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/Politisk-kommunikation-2-768x344.png.webp 768w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/Politisk-kommunikation-2-120x54.png.webp 120w" sizes="(max-width: 1066px) 100vw, 1066px"/>
-<img width="1066" height="478" src="https://schibstedforbusiness.se/wp-content/uploads/2022/06/Politisk-kommunikation-2.png" alt="" loading="lazy" srcset="https://schibstedforbusiness.se/wp-content/uploads/2022/06/Politisk-kommunikation-2.png 1066w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/Politisk-kommunikation-2-250x112.png 250w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/Politisk-kommunikation-2-700x314.png 700w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/Politisk-kommunikation-2-768x344.png 768w, https://schibstedforbusiness.se/wp-content/uploads/2022/06/Politisk-kommunikation-2-120x54.png 120w" sizes="(max-width: 1066px) 100vw, 1066px"/>
-</picture>
-                    </div>
-                    <div class="news-object__meta">
-                        <div class="news-object__meta-title">
-                            <h4>Politisk kommunikation – så tycker väljarna</h4>
-                        </div>
-                        <div class="news-object__meta-date">
-                                                        <div class="no-underline">
-                                <em>
-                                    <time class="post__updated" datetime="2022-06-16">
-                                        2022-06-16 | Artiklar                                    </time>
-                                </em>
-                            </div>
-                        </div>
-                        <div class="news-object__meta-description">
-                            <p>
-                                Med ett par månader kvar till riksdagsval har vi i en ny studie* valt att djupdyka i&hellip;                            </p>
-                        </div>
-                    </div>
-                </a>
-                        </div>
-        <div class="w-100 text-center mg-auto mt-m">
-            <a href="https://schibstedforbusiness.se/aktuellt" class="btn btn-secondary"> Läs mer</a>
-        </div>
-    </div>
-</section></div>            </div>
-                    </main>
-            <button class="footer-form-btn"><i class="far fa-envelope"></i>Kontakt</button>
-    <div class="footer-form-wrapper hide">
-        <div class="footer-form-formular">
-            <script type="text/javascript"></script>
-                <div class='gf_browser_unknown gform_wrapper gravity-theme' id='gform_wrapper_1' ><div id='gf_1' class='gform_anchor' tabindex='-1'></div>
-                        <div class='gform_heading'>
-							<p class='gform_required_legend'>”<span class="gfield_required gfield_required_asterisk">*</span>” anger obligatoriska fält</p>
-                        </div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_1' id='gform_1'  action='/#gf_1' >
-                        <div class='gform_body gform-body'><div id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><div id="field_1_2"  class="gfield gfield--width-half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"  data-js-reload="field_1_2"><label class='gfield_label' for='input_1_2' >Förnamn<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_2' id='input_1_2' type='text' value='' class='large'     aria-required="true" aria-invalid="false"   /> </div></div><div id="field_1_10"  class="gfield gfield--width-half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"  data-js-reload="field_1_10"><label class='gfield_label' for='input_1_10' >Efternamn<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_10' id='input_1_10' type='text' value='' class='large'     aria-required="true" aria-invalid="false"   /> </div></div><div id="field_1_11"  class="gfield gfield--width-half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"  data-js-reload="field_1_11"><label class='gfield_label' for='input_1_11' >Företag/Organisation<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_11' id='input_1_11' type='text' value='' class='large'     aria-required="true" aria-invalid="false"   /> </div></div><div id="field_1_12"  class="gfield gfield--width-half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"  data-js-reload="field_1_12"><label class='gfield_label' for='input_1_12' >Jobbtitel<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_12' id='input_1_12' type='text' value='' class='large'     aria-required="true" aria-invalid="false"   /> </div></div><div id="field_1_3"  class="gfield gfield--width-full gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"  data-js-reload="field_1_3"><label class='gfield_label' for='input_1_3' >E-post<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_email'>
-                            <input name='input_3' id='input_1_3' type='text' value='' class='large'    aria-required="true" aria-invalid="false"  />
-                        </div></div><div id="field_1_9"  class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"  data-js-reload="field_1_9"><label class='gfield_label' for='input_1_9' >Meddelande<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_textarea'><textarea name='input_9' id='input_1_9' class='textarea medium'     aria-required="true" aria-invalid="false"   rows='10' cols='50'></textarea></div></div></div></div>
-        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Skicka'  onclick='if(window["gf_submitting_1"]){return false;}  window["gf_submitting_1"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_1"]){return false;} window["gf_submitting_1"]=true;  jQuery("#gform_1").trigger("submit",[true]); }' /> <input type='hidden' name='gform_ajax' value='form_id=1&amp;title=&amp;description=&amp;tabindex=0' />
-            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
-            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
-            
-            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
-            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjQxOWQwMjFlM2EwMDc0NDdkZGNiZjIwMTExNzcwNDkzIl0=' />
-            <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
-            <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
-            <input type='hidden' name='gform_field_values' value='' />
-            
-        </div>
-                        </form>
-                        </div>
-                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_1' id='gform_ajax_frame_1' title='Denna iframe innehåller logiken som behövs för att hantera Gravity Forms med Ajax-stöd.'></iframe>
-                <script type="text/javascript">
-gform.initializeOnLoaded( function() {gformInitSpinner( 1, 'https://schibstedforbusiness.se/wp-content/plugins/gravityforms/images/spinner.svg' );jQuery('#gform_ajax_frame_1').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_1');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_1').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_1').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_1').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_1').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_1').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_1').val();gformInitSpinner( 1, 'https://schibstedforbusiness.se/wp-content/plugins/gravityforms/images/spinner.svg' );jQuery(document).trigger('gform_page_loaded', [1, current_page]);window['gf_submitting_1'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_1').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_1').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [1]);window['gf_submitting_1'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_1').text());}, 50);}else{jQuery('#gform_1').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [1, current_page]);} );} );
-</script>
-        </div>
-    </div>
-
-<footer id="footer" class="site-footer" role="contentinfo">
-    <div class="container-large">
-        <div class="site-footer__box-social">
-                            <p class="site-footer__box-social--heading mb-s fw-bold">Följ oss:</p>
-                                    <a href="https://www.facebook.com/SchibstedGroup/" class="site-footer__box-social--object">
-                        <picture>
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/12/socials-facebook.png.webp"/>
-<img src="https://schibstedforbusiness.se/wp-content/uploads/2021/12/socials-facebook.png" alt=""/>
-</picture>
-
-                    </a>
-                                    <a href="https://www.facebook.com/SchibstedGroup/" class="site-footer__box-social--object">
-                        <picture>
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/12/socials-instagram.png.webp"/>
-<img src="https://schibstedforbusiness.se/wp-content/uploads/2021/12/socials-instagram.png" alt=""/>
-</picture>
-
-                    </a>
-                                    <a href="https://twitter.com/schibstedgroup" class="site-footer__box-social--object">
-                        <picture>
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/12/socials-twitter.png.webp"/>
-<img src="https://schibstedforbusiness.se/wp-content/uploads/2021/12/socials-twitter.png" alt=""/>
-</picture>
-
-                    </a>
-                                    <a href="https://se.linkedin.com/company/schibsted-marketing-services-sweden" class="site-footer__box-social--object">
-                        <picture>
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/12/socials-linkedin.png.webp"/>
-<img src="https://schibstedforbusiness.se/wp-content/uploads/2021/12/socials-linkedin.png" alt=""/>
-</picture>
-
-                    </a>
-                        </div>
-        <div class="site-footer__box-text">
-            <h2 style="text-align: center;">Rethinking things since 1839</h2>
-<h3 style="text-align: center;">A family of digital brands leading the way across media, online marketplaces and technology ventures.</h3>
-        </div>
-        <div class="site-footer__box-logo">
-            <a href="https://schibstedforbusiness.se">
-                <picture class="logotype__image">
-<source type="image/webp" srcset="https://schibstedforbusiness.se/wp-content/uploads/2021/11/Schibsted-for-Business-hv.png.webp"/>
-<img src="https://schibstedforbusiness.se/wp-content/uploads/2021/11/Schibsted-for-Business-hv.png" alt="Logotyp för Schibsted for business"/>
-</picture>
-
-            </a>
-        </div>
-    </div>
-    <div class="site-footer__copyright mb-xs">
-        <span class="site-footer__copy">&copy; 2022 Schibsted for business</span>
-    </div>
-</footer>
-
-<script src="https://schibstedforbusiness.se/wp-content/themes/schibsted-theme/lightbox/js/lightbox.min.js"></script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K7B03794MR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){window.dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-K7B03794MR');
-</script>
-
-
-<!--googleoff: all--><div id="cookie-law-info-bar" data-nosnippet="true"><span>Denna hemsida använder cookies för att förbättra din användarupplevelse. <a href="https://schibstedforbusiness.se/sekretess" id="CONSTANT_OPEN_URL" target="_blank" class="cli-plugin-main-link">Läs mer</a> <a role='button' data-cli_action="accept" id="cookie_action_close_header" class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button wt-cli-accept-btn">Godkänn och stäng</a></span></div><div id="cookie-law-info-again" data-nosnippet="true"><span id="cookie_hdr_showagain">Manage consent</span></div><div class="cli-modal" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
-  <div class="cli-modal-dialog" role="document">
-	<div class="cli-modal-content cli-bar-popup">
-		  <button type="button" class="cli-modal-close" id="cliModalClose">
-			<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
-			<span class="wt-cli-sr-only">Stäng</span>
-		  </button>
-		  <div class="cli-modal-body">
-			<div class="cli-container-fluid cli-tab-container">
-	<div class="cli-row">
-		<div class="cli-col-12 cli-align-items-stretch cli-px-0">
-			<div class="cli-privacy-overview">
-				<h4>Privacy Overview</h4>				<div class="cli-privacy-content">
-					<div class="cli-privacy-content-text">This website uses cookies to improve your experience while you navigate through the website. Out of these, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the website. We also use third-party cookies that help us analyze and understand how you use this website. These cookies will be stored in your browser only with your consent. You also have the option to opt-out of these cookies. But opting out of some of these cookies may affect your browsing experience.</div>
-				</div>
-				<a class="cli-privacy-readmore" aria-label="Visa mer" role="button" data-readmore-text="Visa mer" data-readless-text="Visa mindre"></a>			</div>
-		</div>
-		<div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
-												<div class="cli-tab-section">
-						<div class="cli-tab-header">
-							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
-								Necessary							</a>
-															<div class="wt-cli-necessary-checkbox">
-									<input type="checkbox" class="cli-user-preference-checkbox"  id="wt-cli-checkbox-necessary" data-id="checkbox-necessary" checked="checked"  />
-									<label class="form-check-label" for="wt-cli-checkbox-necessary">Necessary</label>
-								</div>
-								<span class="cli-necessary-caption">Alltid aktiverad</span>
-													</div>
-						<div class="cli-tab-content">
-							<div class="cli-tab-pane cli-fade" data-id="necessary">
-								<div class="wt-cli-cookie-description">
-									Necessary cookies are absolutely essential for the website to function properly. These cookies ensure basic functionalities and security features of the website, anonymously.
-<table class="cookielawinfo-row-cat-table cookielawinfo-winter"><thead><tr><th class="cookielawinfo-column-1">Cookie</th><th class="cookielawinfo-column-3">Varaktighet</th><th class="cookielawinfo-column-4">Beskrivning</th></tr></thead><tbody><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-analytics</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Analytics".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-functional</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">The cookie is set by GDPR cookie consent to record the user consent for the cookies in the category "Functional".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-necessary</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookies is used to store the user consent for the cookies in the category "Necessary".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-others</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Other.</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-performance</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Performance".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">viewed_cookie_policy</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">The cookie is set by the GDPR Cookie Consent plugin and is used to store whether or not user has consented to the use of cookies. It does not store any personal data.</td></tr></tbody></table>								</div>
-							</div>
-						</div>
-					</div>
-																	<div class="cli-tab-section">
-						<div class="cli-tab-header">
-							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="functional" data-toggle="cli-toggle-tab">
-								Functional							</a>
-															<div class="cli-switch">
-									<input type="checkbox" id="wt-cli-checkbox-functional" class="cli-user-preference-checkbox"  data-id="checkbox-functional" />
-									<label for="wt-cli-checkbox-functional" class="cli-slider" data-cli-enable="Aktiverad" data-cli-disable="Inaktiverad"><span class="wt-cli-sr-only">Functional</span></label>
-								</div>
-													</div>
-						<div class="cli-tab-content">
-							<div class="cli-tab-pane cli-fade" data-id="functional">
-								<div class="wt-cli-cookie-description">
-									Functional cookies help to perform certain functionalities like sharing the content of the website on social media platforms, collect feedbacks, and other third-party features.
-								</div>
-							</div>
-						</div>
-					</div>
-																	<div class="cli-tab-section">
-						<div class="cli-tab-header">
-							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="performance" data-toggle="cli-toggle-tab">
-								Performance							</a>
-															<div class="cli-switch">
-									<input type="checkbox" id="wt-cli-checkbox-performance" class="cli-user-preference-checkbox"  data-id="checkbox-performance" />
-									<label for="wt-cli-checkbox-performance" class="cli-slider" data-cli-enable="Aktiverad" data-cli-disable="Inaktiverad"><span class="wt-cli-sr-only">Performance</span></label>
-								</div>
-													</div>
-						<div class="cli-tab-content">
-							<div class="cli-tab-pane cli-fade" data-id="performance">
-								<div class="wt-cli-cookie-description">
-									Performance cookies are used to understand and analyze the key performance indexes of the website which helps in delivering a better user experience for the visitors.
-								</div>
-							</div>
-						</div>
-					</div>
-																	<div class="cli-tab-section">
-						<div class="cli-tab-header">
-							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="analytics" data-toggle="cli-toggle-tab">
-								Analytics							</a>
-															<div class="cli-switch">
-									<input type="checkbox" id="wt-cli-checkbox-analytics" class="cli-user-preference-checkbox"  data-id="checkbox-analytics" />
-									<label for="wt-cli-checkbox-analytics" class="cli-slider" data-cli-enable="Aktiverad" data-cli-disable="Inaktiverad"><span class="wt-cli-sr-only">Analytics</span></label>
-								</div>
-													</div>
-						<div class="cli-tab-content">
-							<div class="cli-tab-pane cli-fade" data-id="analytics">
-								<div class="wt-cli-cookie-description">
-									Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics the number of visitors, bounce rate, traffic source, etc.
-								</div>
-							</div>
-						</div>
-					</div>
-																	<div class="cli-tab-section">
-						<div class="cli-tab-header">
-							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="advertisement" data-toggle="cli-toggle-tab">
-								Advertisement							</a>
-															<div class="cli-switch">
-									<input type="checkbox" id="wt-cli-checkbox-advertisement" class="cli-user-preference-checkbox"  data-id="checkbox-advertisement" />
-									<label for="wt-cli-checkbox-advertisement" class="cli-slider" data-cli-enable="Aktiverad" data-cli-disable="Inaktiverad"><span class="wt-cli-sr-only">Advertisement</span></label>
-								</div>
-													</div>
-						<div class="cli-tab-content">
-							<div class="cli-tab-pane cli-fade" data-id="advertisement">
-								<div class="wt-cli-cookie-description">
-									Advertisement cookies are used to provide visitors with relevant ads and marketing campaigns. These cookies track visitors across websites and collect information to provide customized ads.
-								</div>
-							</div>
-						</div>
-					</div>
-																	<div class="cli-tab-section">
-						<div class="cli-tab-header">
-							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="others" data-toggle="cli-toggle-tab">
-								Others							</a>
-															<div class="cli-switch">
-									<input type="checkbox" id="wt-cli-checkbox-others" class="cli-user-preference-checkbox"  data-id="checkbox-others" />
-									<label for="wt-cli-checkbox-others" class="cli-slider" data-cli-enable="Aktiverad" data-cli-disable="Inaktiverad"><span class="wt-cli-sr-only">Others</span></label>
-								</div>
-													</div>
-						<div class="cli-tab-content">
-							<div class="cli-tab-pane cli-fade" data-id="others">
-								<div class="wt-cli-cookie-description">
-									Other uncategorized cookies are those that are being analyzed and have not been classified into a category as yet.
-								</div>
-							</div>
-						</div>
-					</div>
-										</div>
-	</div>
-</div>
-		  </div>
-		  <div class="cli-modal-footer">
-			<div class="wt-cli-element cli-container-fluid cli-tab-container">
-				<div class="cli-row">
-					<div class="cli-col-12 cli-align-items-stretch cli-px-0">
-						<div class="cli-tab-footer wt-cli-privacy-overview-actions">
-						
-															<a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn">SPARA OCH ACCEPTERA</a>
-													</div>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-  </div>
-</div>
-<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
-<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
-<!--googleon: all--><link rel='stylesheet' id='block-hero-css'  href='https://schibstedforbusiness.se/wp-content/themes/schibsted-theme/dist/css/blocks/block-hero.css?ver=6.0.2' type='text/css' media='all' />
-<link rel='stylesheet' id='varumarke-slider-css'  href='https://schibstedforbusiness.se/wp-content/themes/schibsted-theme/dist/css/blocks/block-varumarke-slider.css?ver=6.0.2' type='text/css' media='all' />
-<link rel='stylesheet' id='split-textblock-css'  href='https://schibstedforbusiness.se/wp-content/themes/schibsted-theme/dist/css/blocks/block-split-textblock.css?ver=6.0.2' type='text/css' media='all' />
-<link rel='stylesheet' id='square-link-css'  href='https://schibstedforbusiness.se/wp-content/themes/schibsted-theme/dist/css/blocks/block-square-link.css?ver=6.0.2' type='text/css' media='all' />
-<link rel='stylesheet' id='gform_basic-css'  href='https://schibstedforbusiness.se/wp-content/plugins/gravityforms/assets/css/dist/basic.min.css?ver=2.6.6' type='text/css' media='all' />
-<link rel='stylesheet' id='gform_theme_components-css'  href='https://schibstedforbusiness.se/wp-content/plugins/gravityforms/assets/css/dist/theme-components.min.css?ver=2.6.6' type='text/css' media='all' />
-<link rel='stylesheet' id='gform_theme_ie11-css'  href='https://schibstedforbusiness.se/wp-content/plugins/gravityforms/assets/css/dist/theme-ie11.min.css?ver=2.6.6' type='text/css' media='all' />
-<link rel='stylesheet' id='gform_theme-css'  href='https://schibstedforbusiness.se/wp-content/plugins/gravityforms/assets/css/dist/theme.min.css?ver=2.6.6' type='text/css' media='all' />
-<link rel='stylesheet' id='cookie-law-info-table-css'  href='https://schibstedforbusiness.se/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-table.css?ver=2.1.2' type='text/css' media='all' />
-<script type='text/javascript' id='horizon/js-vendor-js-before'>
-!function(e){function r(r){for(var n,l,f=r[0],i=r[1],a=r[2],c=0,s=[];c<f.length;c++)l=f[c],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);for(p&&p(r);s.length;)s.shift()();return u.push.apply(u,a||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,f=1;f<t.length;f++){var i=t[f];0!==o[i]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={0:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var f=window.webpackJsonp=window.webpackJsonp||[],i=f.push.bind(f);f.push=r,f=f.slice();for(var a=0;a<f.length;a++)r(f[a]);var p=i;t()}([]);
-//# sourceMappingURL=manifest.js.map
-</script>
-<script type='text/javascript' src='https://schibstedforbusiness.se/wp-content/themes/schibsted-theme/dist/js/vendor.js?id=ebb394fc2a750ab82640' id='horizon/js-vendor-js'></script>
-<script type='text/javascript' id='horizon/js-js-extra'>
-/* <![CDATA[ */
-var horizon = {"ajaxUrl":"https:\/\/schibstedforbusiness.se\/wp-admin\/admin-ajax.php","ajaxNonce":"c59870ce07"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://schibstedforbusiness.se/wp-content/themes/schibsted-theme/dist/js/main.js?id=81b865e7b36567a97485' id='horizon/js-js'></script>
-<script type='text/javascript' src='https://schibstedforbusiness.se/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js'></script>
-<script type='text/javascript' src='https://schibstedforbusiness.se/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
-<script type='text/javascript' src='https://schibstedforbusiness.se/wp-includes/js/dist/dom-ready.min.js?ver=d996b53411d1533a84951212ab6ac4ff' id='wp-dom-ready-js'></script>
-<script type='text/javascript' src='https://schibstedforbusiness.se/wp-includes/js/dist/hooks.min.js?ver=c6d64f2cb8f5c6bb49caca37f8828ce3' id='wp-hooks-js'></script>
-<script type='text/javascript' src='https://schibstedforbusiness.se/wp-includes/js/dist/i18n.min.js?ver=ebee46757c6a411e38fd079a7ac71d94' id='wp-i18n-js'></script>
-<script type='text/javascript' id='wp-i18n-js-after'>
-wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
-</script>
-<script type='text/javascript' id='wp-a11y-js-translations'>
-( function( domain, translations ) {
-	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
-	localeData[""].domain = domain;
-	wp.i18n.setLocaleData( localeData, domain );
-} )( "default", {"translation-revision-date":"2022-08-17 08:56:32+0000","generator":"GlotPress\/4.0.0-alpha.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"sv_SE"},"Notifications":["Aviseringar"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
-</script>
-<script type='text/javascript' src='https://schibstedforbusiness.se/wp-includes/js/dist/a11y.min.js?ver=a38319d7ba46c6e60f7f9d4c371222c5' id='wp-a11y-js'></script>
-<script type='text/javascript' defer='defer' src='https://schibstedforbusiness.se/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.6.6' id='gform_json-js'></script>
-<script type='text/javascript' id='gform_gravityforms-js-extra'>
-/* <![CDATA[ */
-var gform_i18n = {"datepicker":{"days":{"monday":"M\u00e5n","tuesday":"Tis","wednesday":"Ons","thursday":"Tors","friday":"Fre","saturday":"L\u00f6r","sunday":"S\u00f6n"},"months":{"january":"Januari","february":"Februari","march":"Mars","april":"April","may":"Maj","june":"Juni","july":"Juli","august":"Augusti","september":"September","october":"Oktober","november":"November","december":"December"},"firstDay":1,"iconText":"V\u00e4lj datum"}};
-var gf_legacy_multi = [];
-var gform_gravityforms = {"strings":{"invalid_file_extension":"Denna filtyp \u00e4r inte till\u00e5ten. Filen m\u00e5ste vara i n\u00e5got av f\u00f6ljande format:","delete_file":"Ta bort denna fil","in_progress":"p\u00e5g\u00e5ende","file_exceeds_limit":"Filen \u00f6verskrider storleksbegr\u00e4nsningen","illegal_extension":"Denna filtyp \u00e4r inte till\u00e5ten.","max_reached":"Maximalt antal filer har n\u00e5tts","unknown_error":"Ett problem intr\u00e4ffade n\u00e4r filen skulle sparas p\u00e5 servern","currently_uploading":"V\u00e4nta tills uppladdningen \u00e4r klar","cancel":"Avbryt","cancel_upload":"Avbryta denna uppladdning","cancelled":"Avbruten"},"vars":{"images_url":"https:\/\/schibstedforbusiness.se\/wp-content\/plugins\/gravityforms\/images"}};
-var gf_global = {"gf_currency_config":{"name":"Euro","symbol_left":"","symbol_right":"&#8364;","symbol_padding":" ","thousand_separator":".","decimal_separator":",","decimals":2,"code":"EUR"},"base_url":"https:\/\/schibstedforbusiness.se\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/schibstedforbusiness.se\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","strings":{"newRowAdded":"Ny rad har lagts till.","rowRemoved":"Raden har tagits bort","formSaved":"Formul\u00e4ret har sparats.  Inneh\u00e5llet inneh\u00e5ller l\u00e4nken f\u00f6r att h\u00e4mta tillbaka och fylla i formul\u00e4ret."}};
-/* ]]> */
-</script>
-<script type='text/javascript' defer='defer' src='https://schibstedforbusiness.se/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.6.6' id='gform_gravityforms-js'></script>
-<script type="text/javascript">
-gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 1) {} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
-</script>
-<script type="text/javascript">
-gform.initializeOnLoaded( function() { jQuery(document).trigger('gform_post_render', [1, 1]) } );
-</script>
-    </body>
+        // Load scripts synchronously because source code requires pollyfils
+        (function loadScript(index) {
+            if (index >= scriptUrls.length) {
+                return;
+            }
+            var element = document.createElement('script');
+            element.src = scriptUrls[index];
+            element.onload = function () {
+                loadScript(++index);
+            };
+            body.appendChild(element);
+        })(0);
+    </script>
+</body>
 </html>
