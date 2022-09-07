@@ -1,4 +1,3 @@
-C:\Users\Ruben\AppData\Local\Programs\Python\Python310\python.exe C:/Users/Ruben/Server/Howl/RMHTMLParser.py
 <!DOCTYPE html>
 <html class="language-en" lang="en">
 
