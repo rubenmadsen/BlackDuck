@@ -1,5 +1,6 @@
 from urllib.parse import urlparse
 from pathlib import Path
+import RMRoot
 
 swaps = {
     "<":"LESSTHANMARKER",
@@ -11,6 +12,7 @@ swaps = {
 }
 
 class RMWebpage:
+    name = ""
     url = ""
     root = ""
     subroot = ""
@@ -26,6 +28,7 @@ class RMWebpage:
         self.url = url
         self.root = urlparse(url).hostname
         domainls = self.root.split(".")
+        self.name = domainls[-2]
         self.subroot = "." + domainls[-2].replace("\n", "") + "." + domainls[-1].replace("\n", "")
 
     def addIfNotExists(self, item, targetList: list):
@@ -73,15 +76,16 @@ def convertPath(link: str) -> str:
     return link.replace(":",swaps[":"]).replace("?",swaps["?"]).replace(".",swaps["."]).replace(",",swaps[","])
 
 def writeWebpageToFolderStructure(webpage: RMWebpage):
-    Path("/BlackDuck").mkdir(parents=True, exist_ok=True)
 
+    #Path("/BlackDuck").mkdir(parents=True, exist_ok=True)
+    RMRoot.putLocalDirectory(webpage.name)
 
     for path in webpage.internals:
         swapPath = convertPath(path)
 
-        print("/BlackDuck" + convertPath(RMWebpage.root) + swapPath)
-        Path(convertPath(RMWebpage.root) + swapPath).mkdir(parents=True, exist_ok=True)
-
+        #print(convertPath(RMWebpage.root) + swapPath)
+        print(RMRoot.putLocalDirectory(webpage.name + convertPath(RMWebpage.root) + swapPath))
+        #Path(convertPath(RMWebpage.root) + swapPath).mkdir(parents=True, exist_ok=True)
 
 def writeWebpageToFile(webpage: RMWebpage, name: str):
     with open(name + ".txt", "w", encoding="utf-8") as po:

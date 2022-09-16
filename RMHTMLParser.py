@@ -20,7 +20,7 @@ class RMHTMLParser:
     tags = []
 
     def __init__(self, url):
-        print(urlparse(url).hostname + " @ " + url)
+        #print(urlparse(url).hostname + " @ " + url)
         self.url = url
         self.tagnames = self.getTagNamesFromFile()
         self.raw_data = getWebsiteAsString(url)

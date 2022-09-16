@@ -26,7 +26,7 @@ root: www.aftonbladet.se
 		https://wellobe.aftonbladet.se/
 		https://bloggar.aftonbladet.se/youbet/
 		https://support.aftonbladet.se/hc/sv
-		https://live.aftonbladet.se/val2022/news/631b29cdbfa1030013190140
+		https://live.aftonbladet.se/val2022/news/6324913de44a5a0013159cbf
 		https://etidning.aftonbladet.se/941/Aftonbladet/latest/
 	internals:
 		/
@@ -37,6 +37,7 @@ root: www.aftonbladet.se
 		/tipsa
 		/kultur
 		/ledare
+		/senastenytt
 		/nyheter/a/Rr77qd/aftonbladet-direkt
 		/lokala-nyheter/stockholm
 		/nyheter/kolumnister
@@ -139,7 +140,6 @@ root: www.aftonbladet.se
 		/resa/reseguider/
 		/tagg/ridsport
 		/amnen/s
-		/senastenytt
 		/tagg/serie-a
 		/tagg/shl-svenska-hockeyligan
 		/tagg/simning
@@ -175,24 +175,18 @@ root: www.aftonbladet.se
 		/a-o
 		/minsida/integritet
 		/a/LOlQ4/om-aftonbladet
-		/nyheter/a/2BGx2x/per-bolunds-krismejl-for-att-inte-aka-ur-riksdagen
-		/valkompassen
-		/nyheter/a/MoR8p0/14-makthavare-tippar-sa-kommer-det-ga-i-riksdagsvalet-2022
-		/nyheter/a/WRb5GQ/uppgifter-genombrott-i-eu-forhandlingar-om-elpriset
-		/minekonomi/a/oWJ727/elpriser-det-betalar-partiledarna-for-sin-el
-		/nyheter/a/3EJ4vv/chatt-med-staffan-lindberg-om-klimat
-		/nyheter/kolumnister/a/LlAE64/tillfallet-som-de-som-vill-kasta-ut-monarkin-har-vantat-pa
-		/kungligt/a/69j7b3/drottningens-dod-foljs-av-landsorg
-		/kungligt/a/2BGeOa/prins-charles-73-skandalar-nu-blir-han-kung
-		/halsa/a/Q7ol8A/sa-far-du-utlosning-tidigare-experternas-basta-rad
-		/halsa/a/PolQO7/5-preparat-mot-for-tidig-utlosning-lakarens-rad
-		/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=951179
-		/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=951178
-		/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=951177
-		/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=951176
-		/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=951175
-		/nyheter/a/OrGlww/corona-flera-ganger-sa-kan-det-skada-din-kropp
-		/relationer/a/xgA4VR/psykopater-och-narcissister-har-olika-slags-humor
+		/sportbladet/fotboll/a/abP8jO/ecuador-far-spela-fotbolls-vm-fifas-besked
+		/nyheter/a/rlg5xm/man-haktas-for-dubbelmord
+		/nyheter/a/9zOORr/barndomsvan-om-mordmisstankt-skotsam-grabb
+		/minekonomi/a/8J69pd/priset-okar-pa-fredagsmys-taco-och-chips-rusar
+		/minekonomi/a/y4BzjA/har-finns-billigaste-matkassen-jamfor-butikerna-sjalv
+		/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=955187
+		/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=955186
+		/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=955184
+		/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=955183
+		/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=955182
+		/nyheter/a/xgRPLX/experterna-om-nya-coronavaccinet-sa-har-ska-du-tanka
+		/relationer/a/lV8poM/gaslightad-av-pojkvannen-har-ar-varningstecknen
 	external:
 		https://www.godare.se/
 		https://www.wellness.se
@@ -212,7 +206,6 @@ root: www.aftonbladet.se
 		words:
 		text:
 	filtered:
-	/
 	/
 	/story/valet-2022-3
 	/sportbladet
@@ -245,6 +238,7 @@ root: www.aftonbladet.se
 	/resa
 	https://malservice.aftonbladet.se/turneringar
 	/nojesbladet/musik/rockbjornen
+	/senastenytt
 	https://bloggar.aftonbladet.se/sillyseason/
 	/nojesbladet/spela
 	/sportbladet/speltips
@@ -255,7 +249,7 @@ root: www.aftonbladet.se
 	/story/valet-2022-3
 	/minsida/nyhetsbrev
 	/tipsa/
-	https://live.aftonbladet.se/val2022/news
+	/nyheter/a/9zOORr/barndomsvan-om-mordmisstankt-skotsam-grabb
 	/nyheter/a/Rr77qd/aftonbladet-direkt
 	/
 	/
@@ -267,7 +261,7 @@ root: www.aftonbladet.se
 	/tipsa
 	/kultur
 	/ledare
-	/
+	/senastenytt
 	/nyheter/a/Rr77qd/aftonbladet-direkt
 	/lokala-nyheter/stockholm
 	/story/valet-2022-3
@@ -484,25 +478,19 @@ root: www.aftonbladet.se
 	/tipsa/
 	/a/LOlQ4/om-aftonbladet
 	https://support.aftonbladet.se/hc/sv
-	/nyheter/a/2BGx2x/per-bolunds-krismejl-for-att-inte-aka-ur-riksdagen
-	https://live.aftonbladet.se/val2022/news/631b29cdbfa1030013190140
-	/valkompassen
-	/nyheter/a/MoR8p0/14-makthavare-tippar-sa-kommer-det-ga-i-riksdagsvalet-2022
-	https://live.aftonbladet.se/val2022/news
-	/nyheter/a/WRb5GQ/uppgifter-genombrott-i-eu-forhandlingar-om-elpriset
-	/minekonomi/a/oWJ727/elpriser-det-betalar-partiledarna-for-sin-el
-	/nyheter/a/3EJ4vv/chatt-med-staffan-lindberg-om-klimat
-	/nyheter/kolumnister/a/LlAE64/tillfallet-som-de-som-vill-kasta-ut-monarkin-har-vantat-pa
-	/kungligt/a/69j7b3/drottningens-dod-foljs-av-landsorg
-	/kungligt/a/2BGeOa/prins-charles-73-skandalar-nu-blir-han-kung
-	/halsa/a/Q7ol8A/sa-far-du-utlosning-tidigare-experternas-basta-rad
-	/halsa/a/PolQO7/5-preparat-mot-for-tidig-utlosning-lakarens-rad
-	/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=951179
-	/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=951178
-	/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=951177
-	/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=951176
-	/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=951175
+	/sportbladet/fotboll/a/abP8jO/ecuador-far-spela-fotbolls-vm-fifas-besked
+	https://live.aftonbladet.se/val2022/news/6324913de44a5a0013159cbf
+	/nyheter/a/rlg5xm/man-haktas-for-dubbelmord
+	/nyheter/a/9zOORr/barndomsvan-om-mordmisstankt-skotsam-grabb
+	/nyheter/a/9zOORr/barndomsvan-om-mordmisstankt-skotsam-grabb
+	/minekonomi/a/8J69pd/priset-okar-pa-fredagsmys-taco-och-chips-rusar
+	/minekonomi/a/y4BzjA/har-finns-billigaste-matkassen-jamfor-butikerna-sjalv
+	/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=955187
+	/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=955186
+	/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=955184
+	/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=955183
+	/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=955182
 	/nyheter/a/Rr77qd/aftonbladet-direkt
 	https://etidning.aftonbladet.se/941/Aftonbladet/latest/
-	/nyheter/a/OrGlww/corona-flera-ganger-sa-kan-det-skada-din-kropp
-	/relationer/a/xgA4VR/psykopater-och-narcissister-har-olika-slags-humor
+	/nyheter/a/xgRPLX/experterna-om-nya-coronavaccinet-sa-har-ska-du-tanka
+	/relationer/a/lV8poM/gaslightad-av-pojkvannen-har-ar-varningstecknen

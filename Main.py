@@ -7,7 +7,6 @@ from pathlib import Path
 #Path("/my/directory").mkdir(parents=True, exist_ok=True)
 
 
-ROOT_DIR = os.path.abspath(os.curdir)
 
 address = "http://www.aftonbladet.se"
 con = RMDatabase()
